@@ -1,0 +1,193 @@
+---
+interface Props {
+  playlistUrl?: string | null;
+}
+
+const { playlistUrl } = Astro.props;
+---
+
+{
+  playlistUrl && (
+    <section class="playlist-player" data-playlist-player aria-label="Player Spotify da semana">
+      <div class="playlist-facade" data-playlist-facade>
+        <div>
+          <p class="mono player-kicker">Playlist Spotify</p>
+          <p class="player-title">Ouvir esta edição</p>
+          <p class="player-copy">
+            O player só carrega depois do clique. Antes disso, sem pedidos à Spotify.
+          </p>
+        </div>
+        <div class="player-actions">
+          <button
+            class="listen-button"
+            type="button"
+            data-playlist-load
+            aria-label="Carregar o player Spotify desta edição"
+          >
+            ▶ Ouvir no Spotify
+          </button>
+          <a
+            class="fallback-link mono"
+            href={playlistUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Abrir no Spotify
+          </a>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+<script>
+  function playlistIdFromUrl(value) {
+    try {
+      const url = new URL(value);
+      const parts = url.pathname.split('/').filter(Boolean);
+      const playlistIndex = parts.indexOf('playlist');
+      if (playlistIndex === -1) return null;
+      return parts[playlistIndex + 1] || null;
+    } catch {
+      return null;
+    }
+  }
+
+  function spotifyEmbedUrl(value) {
+    const playlistId = playlistIdFromUrl(value);
+    if (!playlistId) return null;
+
+    // Construído só no clique: evita deixar URL de embed pronta no HTML inicial.
+    const host = ['open', 'spotify', 'com'].join('.');
+    const path = ['embed', 'playlist', encodeURIComponent(playlistId)].join('/');
+    const url = new URL(`https://${host}/${path}`);
+    url.searchParams.set('utm_source', 'generator');
+    url.searchParams.set('theme', '0');
+    return url.toString();
+  }
+
+  function initPlaylistPlayer(root) {
+    if (root.dataset.bound === 'true') return;
+    root.dataset.bound = 'true';
+
+    const button = root.querySelector('[data-playlist-load]');
+    const fallbackLink = root.querySelector('a[href]');
+    if (!button || !fallbackLink) return;
+
+    button.addEventListener('click', () => {
+      if (root.dataset.loaded === 'true') return;
+
+      const embedUrl = spotifyEmbedUrl(fallbackLink.href);
+      if (!embedUrl) {
+        fallbackLink.click();
+        return;
+      }
+
+      const iframe = document.createElement('iframe');
+      iframe.title = 'Spotify playlist player';
+      iframe.src = embedUrl;
+      iframe.width = '100%';
+      iframe.height = '152';
+      iframe.frameBorder = '0';
+      iframe.loading = 'lazy';
+      iframe.allow = 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture';
+      iframe.style.borderRadius = '12px';
+
+      root.replaceChildren(iframe);
+      root.dataset.loaded = 'true';
+    });
+  }
+
+  document.querySelectorAll('[data-playlist-player]').forEach(initPlaylistPlayer);
+</script>
+
+<style>
+  .playlist-player {
+    margin-top: 26px;
+  }
+
+  .playlist-facade {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--hover);
+  }
+
+  .player-kicker {
+    color: var(--faint);
+  }
+
+  .player-title {
+    margin-top: 7px;
+    color: var(--fg);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.1px;
+  }
+
+  .player-copy {
+    max-width: 28em;
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  .player-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 9px;
+    flex-shrink: 0;
+  }
+
+  .listen-button {
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 9px 12px;
+    background: transparent;
+    color: var(--fg);
+    cursor: pointer;
+    font: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    transition:
+      border-color 0.16s ease,
+      color 0.16s ease,
+      background 0.16s ease;
+  }
+
+  .listen-button:hover,
+  .listen-button:focus-visible {
+    border-color: var(--accent);
+    background: var(--bg);
+    color: var(--accent);
+    outline: none;
+  }
+
+  .fallback-link {
+    color: var(--faint);
+    font-size: 10.5px;
+    text-decoration: none;
+  }
+
+  .fallback-link:hover,
+  .fallback-link:focus-visible {
+    color: var(--muted);
+    outline: none;
+  }
+
+  @media (max-width: 560px) {
+    .playlist-facade {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .player-actions {
+      align-items: flex-start;
+    }
+  }
+</style>

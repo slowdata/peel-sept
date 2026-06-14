@@ -1,0 +1,53 @@
+{
+  "week": "2026-W25",
+  "label": "Semana 25 · 2026",
+  "date_range": "16 — 22 Jun 2026",
+  "playlist_url": "https://open.spotify.com/playlist/7Dka6iXFVEf9QbI2u3Sl0p",
+  "tracks": [
+    {
+      "rank": 1,
+      "artist": "Water From Your Eyes",
+      "title": "Playing Classics",
+      "source": "Peel fixture",
+      "source_count": 2,
+      "spotify_url": null
+    },
+    {
+      "rank": 2,
+      "artist": "Nation of Language",
+      "title": "Inept Apollo",
+      "source": "Peel fixture",
+      "source_count": 1,
+      "spotify_url": null
+    },
+    {
+      "rank": 3,
+      "artist": "Model/Actriz",
+      "title": "Cinderella",
+      "source": "Peel fixture",
+      "source_count": 1,
+      "spotify_url": null
+    }
+  ],
+  "albums": [
+    {
+      "rank": 1,
+      "artist": "Wax Machine",
+      "title": "The Sky Unfurls, The Dance Goes On",
+      "source": "Aquarium Drunkard",
+      "source_count": 1,
+      "link": "https://aquariumdrunkard.com/",
+      "spotify_url": "https://open.spotify.com/album/1WaxMachineAlbum"
+    },
+    {
+      "rank": 2,
+      "artist": "Boards of Canada",
+      "title": "Inferno",
+      "source": "Aquarium Drunkard",
+      "source_count": 1,
+      "link": "https://aquariumdrunkard.com/",
+      "spotify_url": null
+    }
+  ],
+  "sources": ["Aquarium Drunkard", "Peel fixture"]
+}

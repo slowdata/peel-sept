@@ -1,0 +1,34 @@
+---
+import Rating from './Rating.astro';
+import SourceBadge from './SourceBadge.astro';
+import type { Track } from '../data/issues';
+
+interface Props {
+  track: Track;
+  week: string;
+}
+
+const { track, week } = Astro.props;
+const ratingId = `${week}:${track.artist}:${track.title}`;
+const rank = String(track.rank).padStart(2, '0');
+const label = `${track.artist} — ${track.title}`;
+---
+
+<article class="row" data-track-row>
+  <div class="num">{rank}</div>
+  <div>
+    {
+      track.spotify_url ? (
+        <a class="title" href={track.spotify_url} target="_blank" rel="noopener noreferrer">
+          {track.title}
+        </a>
+      ) : (
+        <div class="title">{track.title}</div>
+      )
+    }
+    <div class="artist">
+      {track.artist} · <SourceBadge source={track.source} sourceCount={track.source_count} />
+    </div>
+  </div>
+  <Rating id={ratingId} label={label} />
+</article>

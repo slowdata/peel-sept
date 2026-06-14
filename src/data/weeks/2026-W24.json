@@ -1,0 +1,137 @@
+{
+  "week": "2026-W24",
+  "label": "Semana 24 · 2026",
+  "date_range": "9 — 15 Jun 2026",
+  "playlist_url": "https://open.spotify.com/playlist/7Dka6iXFVEf9QbI2u3Sl0p",
+  "tracks": [
+    {
+      "rank": 1,
+      "artist": "Six Sex",
+      "title": "ULTRA",
+      "source": "NPR",
+      "source_count": 1,
+      "spotify_url": null
+    },
+    {
+      "rank": 2,
+      "artist": "Hayley Kiyoko",
+      "title": "girls like girls",
+      "source": "NPR",
+      "source_count": 1,
+      "spotify_url": null
+    },
+    {
+      "rank": 3,
+      "artist": "YHWH Nailgun",
+      "title": "Magazine",
+      "source": "NPR",
+      "source_count": 2,
+      "spotify_url": null
+    },
+    {
+      "rank": 4,
+      "artist": "Pussy Riot",
+      "title": "CYKA",
+      "source": "NPR",
+      "source_count": 1,
+      "spotify_url": null
+    },
+    {
+      "rank": 5,
+      "artist": "Paycheque",
+      "title": "Heatwave",
+      "source": "Gorilla vs Bear",
+      "source_count": 1,
+      "spotify_url": null
+    },
+    {
+      "rank": 6,
+      "artist": "Marci",
+      "title": "Butterfly Sticker",
+      "source": "Gorilla vs Bear",
+      "source_count": 1,
+      "spotify_url": null
+    },
+    {
+      "rank": 7,
+      "artist": "Snag",
+      "title": "Unarrest Me",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": null
+    }
+  ],
+  "albums": [
+    {
+      "rank": 1,
+      "artist": "Vince Staples",
+      "title": "Cry Baby",
+      "source": "The Quietus",
+      "source_count": 1,
+      "link": "https://thequietus.com/quietus-reviews/vince-staples-cry-baby-review/",
+      "spotify_url": null
+    },
+    {
+      "rank": 2,
+      "artist": "Olivia Rodrigo",
+      "title": "You Seem Pretty Sad for a Girl So in Love",
+      "source": "The Guardian",
+      "source_count": 1,
+      "link": "https://www.theguardian.com/music/",
+      "spotify_url": null
+    },
+    {
+      "rank": 3,
+      "artist": "Káryyn",
+      "title": "Physics Universal Love Language (PULL)",
+      "source": "The Quietus",
+      "source_count": 1,
+      "link": "https://thequietus.com/",
+      "spotify_url": null
+    },
+    {
+      "rank": 4,
+      "artist": "Bill Orcutt & Mabe Fratti",
+      "title": "Almost Waking",
+      "source": "The Quietus",
+      "source_count": 1,
+      "link": "https://thequietus.com/",
+      "spotify_url": null
+    },
+    {
+      "rank": 5,
+      "artist": "Zoh Amba",
+      "title": "Eyes Full",
+      "source": "The Guardian",
+      "source_count": 1,
+      "link": "https://www.theguardian.com/music/",
+      "spotify_url": null
+    },
+    {
+      "rank": 6,
+      "artist": "YHWH Nailgun",
+      "title": "Magazine",
+      "source": "The Quietus",
+      "source_count": 2,
+      "link": "https://thequietus.com/",
+      "spotify_url": null
+    },
+    {
+      "rank": 7,
+      "artist": "Gintė Preisaitė",
+      "title": "Instruments of Forgetting and the Singing Bone",
+      "source": "The Guardian",
+      "source_count": 1,
+      "link": "https://www.theguardian.com/music/",
+      "spotify_url": null
+    }
+  ],
+  "sources": [
+    "Pitchfork",
+    "Stereogum",
+    "The Quietus",
+    "NPR",
+    "Gorilla vs Bear",
+    "The Guardian"
+  ]
+}

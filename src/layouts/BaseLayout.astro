@@ -1,0 +1,521 @@
+---
+import type { Issue } from '../data/issues';
+import { issueUrl } from '../data/issues';
+
+interface Props {
+  title?: string;
+  description?: string;
+  issue: Issue;
+  issues: Issue[];
+}
+
+const {
+  title = 'Peel Sept — a semana, curada à mão',
+  description = 'Sete músicas por semana, escolhidas e avaliadas à mão. Sem algoritmos, sem bolhas.',
+  issue,
+  issues,
+} = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Peel Sept" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Space+Grotesk:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="topbar">
+        <a class="mono site-id" href="/">peel.sept.pt</a>
+        <span class="mono">{issue.label}</span>
+      </div>
+
+      <slot />
+
+      <footer>
+        <p class="thanks">
+          <span class="ethos">Obrigado por passares por aqui.</span>
+          O nome é uma vénia a John Peel — gosto humano antes do algoritmo.
+          Descascamos a internet para chegar à polpa: 7 faixas por semana,
+          escolhidas a dedo.
+        </p>
+        <p class="manifesto">Sem algoritmos, sem bolhas. <span>Peel the noise.</span></p>
+        <nav class="archive" aria-label="Arquivo semanal">
+          <span class="mono">Arquivo</span>
+          <div>
+            {
+              issues.map((item) => (
+                <a class={item.week === issue.week ? 'active' : ''} href={issueUrl(item)}>
+                  {item.week}
+                </a>
+              ))
+            }
+          </div>
+        </nav>
+        <div class="botbar">
+          <span class="mono">© 2026 Peel Sept</span>
+          <span class="mono">Feito com gosto</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --bg: #0a0a0a;
+    --fg: #f3f1ee;
+    --muted: #8d8a86;
+    --faint: #5a5854;
+    --line: #211f1d;
+    --hover: #131211;
+    --accent: #e2895a;
+    --maxw: 720px;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    background: var(--bg);
+  }
+
+  body {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.55;
+    padding: 0 28px;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  a {
+    color: inherit;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+
+  .wrap {
+    max-width: var(--maxw);
+    margin: 0 auto;
+  }
+
+  .mono {
+    font-family: 'Geist Mono', 'IBM Plex Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11.5px;
+    color: var(--faint);
+  }
+
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 56px 0 64px;
+  }
+
+  .site-id {
+    text-decoration: none;
+  }
+
+  .mark {
+    font-family: 'Fraunces', Georgia, serif;
+    font-optical-sizing: auto;
+    font-size: 62px;
+    font-weight: 500;
+    letter-spacing: -1.4px;
+    line-height: 1;
+  }
+
+  .mark em {
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .lede {
+    max-width: 26em;
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.55;
+  }
+
+  .dates {
+    margin-top: 0;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+    margin-top: 20px;
+  }
+
+  .playlist-link {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 7px 10px;
+    color: var(--muted);
+    text-decoration: none;
+    transition:
+      border-color 0.16s ease,
+      color 0.16s ease,
+      background 0.16s ease;
+  }
+
+  .playlist-link:hover,
+  .playlist-link:focus-visible {
+    border-color: var(--accent);
+    background: var(--hover);
+    color: var(--fg);
+    outline: none;
+  }
+
+  .sec-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 20px;
+    margin: 92px 0 8px;
+  }
+
+  .sec-head h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-optical-sizing: auto;
+    font-size: 29px;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+  }
+
+  .playlist {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: 40px 1fr 150px;
+    align-items: center;
+    gap: 20px;
+    padding: 22px 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .num {
+    font-family: 'Geist Mono', 'IBM Plex Mono', monospace;
+    color: var(--faint);
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.1px;
+  }
+
+  .artist {
+    margin-top: 3px;
+    color: var(--muted);
+    font-size: 13.5px;
+  }
+
+  .src {
+    color: var(--faint);
+  }
+
+  .source-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--faint);
+  }
+
+  .source-badge.consensus {
+    color: var(--accent);
+  }
+
+  .rate {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 7px;
+  }
+
+  .bar {
+    display: flex;
+    gap: 4px;
+  }
+
+  .seg {
+    width: 18px;
+    height: 4px;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    background: var(--line);
+    transition:
+      background 0.14s ease,
+      transform 0.14s ease;
+  }
+
+  .seg:hover,
+  .seg:focus-visible {
+    transform: scaleY(1.6);
+    outline: none;
+  }
+
+  .seg:focus-visible {
+    box-shadow: 0 0 0 2px var(--accent);
+  }
+
+  .seg.on {
+    background: var(--fg);
+  }
+
+  .row[data-rated='love'] .seg.on,
+  .row[data-rated='like'] .seg.on {
+    background: var(--accent);
+  }
+
+  .rlabel {
+    font-family: 'Geist Mono', 'IBM Plex Mono', monospace;
+    color: var(--faint);
+    font-size: 10.5px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    transition: color 0.14s ease;
+  }
+
+  .row[data-rated] .rlabel {
+    color: var(--muted);
+  }
+
+  .albgrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 12px;
+    margin-top: 26px;
+  }
+
+  .alb {
+    position: relative;
+    display: grid;
+    aspect-ratio: 1;
+    place-items: center;
+    border: 1px dashed var(--line);
+    border-radius: 10px;
+    text-decoration: none;
+    transition:
+      border-color 0.18s ease,
+      background 0.18s ease;
+  }
+
+  .alb:hover,
+  .alb:focus-visible {
+    border-color: var(--faint);
+    background: var(--hover);
+    outline: none;
+  }
+
+  .alb .n {
+    font-family: 'Geist Mono', 'IBM Plex Mono', monospace;
+    color: var(--faint);
+    font-size: 11px;
+  }
+
+  .alb .tip {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    max-width: 240px;
+    padding: 5px 9px;
+    transform: translateX(-50%);
+    border-radius: 6px;
+    opacity: 0;
+    background: var(--fg);
+    color: var(--bg);
+    font-size: 11px;
+    font-weight: 500;
+    pointer-events: none;
+    text-align: center;
+    transition: opacity 0.15s ease;
+    white-space: nowrap;
+    z-index: 2;
+  }
+
+  .alb:hover .tip,
+  .alb:focus-visible .tip {
+    opacity: 1;
+  }
+
+  .alb.consensus {
+    border-color: color-mix(in srgb, var(--accent), var(--line) 45%);
+  }
+
+  .alb-cap {
+    margin-top: 22px;
+    color: var(--muted);
+    font-size: 14.5px;
+    line-height: 1.5;
+  }
+
+  .source-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 30px;
+  }
+
+  .chip {
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 5px 9px;
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  footer {
+    margin: 100px 0 70px;
+    padding-top: 30px;
+    border-top: 1px solid var(--line);
+  }
+
+  .thanks {
+    max-width: 36em;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .ethos {
+    color: var(--fg);
+    font-family: 'Fraunces', Georgia, serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    font-size: 1.08em;
+  }
+
+  .manifesto {
+    margin-top: 16px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .manifesto span {
+    color: var(--fg);
+  }
+
+  .archive {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 34px;
+    padding-top: 22px;
+    border-top: 1px solid var(--line);
+  }
+
+  .archive div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  .archive a {
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  .archive a.active {
+    color: var(--accent);
+  }
+
+  .botbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  @media (max-width: 560px) {
+    body {
+      padding: 0 20px;
+    }
+
+    .topbar,
+    .botbar,
+    .archive {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .topbar {
+      padding: 38px 0 52px;
+    }
+
+    .mark {
+      font-size: 46px;
+    }
+
+    .sec-head {
+      margin-top: 72px;
+    }
+
+    .row {
+      grid-template-columns: 28px 1fr auto;
+      gap: 14px;
+    }
+
+    .rate {
+      gap: 6px;
+    }
+
+    .seg {
+      width: 13px;
+    }
+
+    .rlabel {
+      max-width: 52px;
+      text-align: right;
+    }
+
+    .albgrid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .alb .tip {
+      display: none;
+    }
+  }
+</style>

@@ -1,0 +1,33 @@
+---
+import type { Album } from '../data/issues';
+
+interface Props {
+  album: Album;
+}
+
+const { album } = Astro.props;
+const rank = String(album.rank).padStart(2, '0');
+const title = `${album.artist} — ${album.title}`;
+const href = album.spotify_url || album.link;
+const consensus = album.source_count > 1;
+---
+
+{
+  href ? (
+    <a
+      class:list={['alb', { consensus }]}
+      href={href}
+      aria-label={title}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <span class="tip">{title}</span>
+      <span class="n">{rank}</span>
+    </a>
+  ) : (
+    <div class:list={['alb', { consensus }]} aria-label={title}>
+      <span class="tip">{title}</span>
+      <span class="n">{rank}</span>
+    </div>
+  )
+}

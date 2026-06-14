@@ -1,0 +1,105 @@
+---
+interface Props {
+  id: string;
+  label: string;
+}
+
+const { id, label } = Astro.props;
+const levels = [
+  { key: 'ban', label: 'Ban' },
+  { key: 'skip', label: 'Passo' },
+  { key: 'meh', label: 'Meh' },
+  { key: 'like', label: 'Gosto' },
+  { key: 'love', label: 'Amo' },
+];
+---
+
+<div class="rate" data-rating data-rating-id={id}>
+  <div class="bar" role="group" aria-label={`Avaliar ${label}`}>
+    {
+      levels.map((level) => (
+        <button
+          class="seg"
+          type="button"
+          title={level.label}
+          aria-label={`${level.label}: ${label}`}
+          data-rating-value={level.key}
+        />
+      ))
+    }
+  </div>
+  <span class="rlabel" data-rating-label>Avaliar</span>
+</div>
+
+<script>
+  const LEVELS = [
+    { key: 'ban', label: 'Ban' },
+    { key: 'skip', label: 'Passo' },
+    { key: 'meh', label: 'Meh' },
+    { key: 'like', label: 'Gosto' },
+    { key: 'love', label: 'Amo' },
+  ];
+
+  const STORAGE_KEY = 'peel_sept_ratings';
+
+  function loadStore() {
+    try {
+      return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+    } catch {
+      return {};
+    }
+  }
+
+  function saveStore(store) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(store));
+  }
+
+  function labelFor(key) {
+    return LEVELS.find((level) => level.key === key)?.label || 'Avaliar';
+  }
+
+  function indexFor(key) {
+    return LEVELS.findIndex((level) => level.key === key);
+  }
+
+  function initRating(root) {
+    if (root.dataset.bound === 'true') return;
+    root.dataset.bound = 'true';
+
+    const id = root.dataset.ratingId;
+    const row = root.closest('[data-track-row]');
+    const buttons = Array.from(root.querySelectorAll('[data-rating-value]'));
+    const label = root.querySelector('[data-rating-label]');
+
+    const paint = () => {
+      const store = loadStore();
+      const current = id ? store[id] : null;
+      const selected = current ? indexFor(current) : -1;
+      buttons.forEach((button, index) => {
+        button.classList.toggle('on', selected >= 0 && index <= selected);
+        button.setAttribute('aria-pressed', String(button.dataset.ratingValue === current));
+      });
+      if (label) label.textContent = labelFor(current);
+      if (row) {
+        if (current) row.dataset.rated = current;
+        else delete row.dataset.rated;
+      }
+    };
+
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        if (!id) return;
+        const value = button.dataset.ratingValue;
+        const store = loadStore();
+        if (store[id] === value) delete store[id];
+        else store[id] = value;
+        saveStore(store);
+        paint();
+      });
+    });
+
+    paint();
+  }
+
+  document.querySelectorAll('[data-rating]').forEach(initRating);
+</script>
