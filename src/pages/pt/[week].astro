@@ -1,6 +1,6 @@
 ---
-import IssueView from '../components/IssueView.astro';
-import { issues, type Issue } from '../data/issues';
+import IssueView from '../../components/IssueView.astro';
+import { issues, type Issue } from '../../data/issues';
 
 export function getStaticPaths() {
   return issues.map((issue) => ({
@@ -16,4 +16,4 @@ interface Props {
 const { issue } = Astro.props;
 ---
 
-<IssueView issue={issue} issues={issues} locale="en" />
+<IssueView issue={issue} issues={issues} locale="pt" />

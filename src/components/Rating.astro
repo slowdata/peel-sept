@@ -1,21 +1,33 @@
 ---
+type RatingLabels = {
+  empty: string;
+  aria: string;
+  ban: string;
+  skip: string;
+  meh: string;
+  like: string;
+  love: string;
+};
+
 interface Props {
   id: string;
   label: string;
+  labels: RatingLabels;
 }
 
-const { id, label } = Astro.props;
+const { id, label, labels } = Astro.props;
 const levels = [
-  { key: 'ban', label: 'Ban' },
-  { key: 'skip', label: 'Passo' },
-  { key: 'meh', label: 'Meh' },
-  { key: 'like', label: 'Gosto' },
-  { key: 'love', label: 'Amo' },
+  { key: 'ban', label: labels.ban },
+  { key: 'skip', label: labels.skip },
+  { key: 'meh', label: labels.meh },
+  { key: 'like', label: labels.like },
+  { key: 'love', label: labels.love },
 ];
+const ariaLabel = labels.aria.replace('{label}', label);
 ---
 
-<div class="rate" data-rating data-rating-id={id}>
-  <div class="bar" role="group" aria-label={`Avaliar ${label}`}>
+<div class="rate" data-rating data-rating-id={id} data-rating-labels={JSON.stringify(labels)}>
+  <div class="bar" role="group" aria-label={ariaLabel}>
     {
       levels.map((level) => (
         <button
@@ -28,18 +40,10 @@ const levels = [
       ))
     }
   </div>
-  <span class="rlabel" data-rating-label>Avaliar</span>
+  <span class="rlabel" data-rating-label>{labels.empty}</span>
 </div>
 
 <script>
-  const LEVELS = [
-    { key: 'ban', label: 'Ban' },
-    { key: 'skip', label: 'Passo' },
-    { key: 'meh', label: 'Meh' },
-    { key: 'like', label: 'Gosto' },
-    { key: 'love', label: 'Amo' },
-  ];
-
   const STORAGE_KEY = 'peel_sept_ratings';
 
   function loadStore() {
@@ -54,12 +58,41 @@ const levels = [
     localStorage.setItem(STORAGE_KEY, JSON.stringify(store));
   }
 
-  function labelFor(key) {
-    return LEVELS.find((level) => level.key === key)?.label || 'Avaliar';
+  function levelsFor(root) {
+    try {
+      const labels = JSON.parse(root.dataset.ratingLabels || '{}');
+      return [
+        { key: 'ban', label: labels.ban || 'Ban' },
+        { key: 'skip', label: labels.skip || 'Skip' },
+        { key: 'meh', label: labels.meh || 'Meh' },
+        { key: 'like', label: labels.like || 'Like' },
+        { key: 'love', label: labels.love || 'Love' },
+      ];
+    } catch {
+      return [
+        { key: 'ban', label: 'Ban' },
+        { key: 'skip', label: 'Skip' },
+        { key: 'meh', label: 'Meh' },
+        { key: 'like', label: 'Like' },
+        { key: 'love', label: 'Love' },
+      ];
+    }
   }
 
-  function indexFor(key) {
-    return LEVELS.findIndex((level) => level.key === key);
+  function emptyLabelFor(root) {
+    try {
+      return JSON.parse(root.dataset.ratingLabels || '{}').empty || 'Rate';
+    } catch {
+      return 'Rate';
+    }
+  }
+
+  function labelFor(levels, key, emptyLabel) {
+    return levels.find((level) => level.key === key)?.label || emptyLabel;
+  }
+
+  function indexFor(levels, key) {
+    return levels.findIndex((level) => level.key === key);
   }
 
   function initRating(root) {
@@ -67,6 +100,8 @@ const levels = [
     root.dataset.bound = 'true';
 
     const id = root.dataset.ratingId;
+    const levels = levelsFor(root);
+    const emptyLabel = emptyLabelFor(root);
     const row = root.closest('[data-track-row]');
     const buttons = Array.from(root.querySelectorAll('[data-rating-value]'));
     const label = root.querySelector('[data-rating-label]');
@@ -74,12 +109,12 @@ const levels = [
     const paint = () => {
       const store = loadStore();
       const current = id ? store[id] : null;
-      const selected = current ? indexFor(current) : -1;
+      const selected = current ? indexFor(levels, current) : -1;
       buttons.forEach((button, index) => {
         button.classList.toggle('on', selected >= 0 && index <= selected);
         button.setAttribute('aria-pressed', String(button.dataset.ratingValue === current));
       });
-      if (label) label.textContent = labelFor(current);
+      if (label) label.textContent = labelFor(levels, current, emptyLabel);
       if (row) {
         if (current) row.dataset.rated = current;
         else delete row.dataset.rated;

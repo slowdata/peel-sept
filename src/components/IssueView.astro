@@ -1,0 +1,95 @@
+---
+import AlbumCard from './AlbumCard.astro';
+import PlaylistPlayer from './PlaylistPlayer.astro';
+import TrackCard from './TrackCard.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import type { Issue } from '../data/issues';
+import { t, weekLabel, type Locale } from '../i18n';
+
+interface Props {
+  issue: Issue;
+  issues: Issue[];
+  locale: Locale;
+  isIndex?: boolean;
+}
+
+const { issue, issues, locale, isIndex = false } = Astro.props;
+const title = `Peel Sept — ${weekLabel(locale, issue)}`;
+const description = `${issue.date_range}: ${t(locale, 'site.description')}`;
+const ratingLabels = {
+  empty: t(locale, 'rating.empty'),
+  aria: t(locale, 'rating.aria'),
+  ban: t(locale, 'rating.ban'),
+  skip: t(locale, 'rating.skip'),
+  meh: t(locale, 'rating.meh'),
+  like: t(locale, 'rating.like'),
+  love: t(locale, 'rating.love'),
+};
+---
+
+<BaseLayout
+  issue={issue}
+  issues={issues}
+  locale={locale}
+  pathIssue={isIndex ? null : issue}
+  title={title}
+  description={description}
+>
+  <header>
+    <h1 class="mark">Peel <em>Sept</em></h1>
+    <p class="lede">{t(locale, 'hero.lede')}</p>
+    <div class="hero-actions">
+      <p class="mono dates">{issue.date_range}</p>
+    </div>
+    <PlaylistPlayer
+      playlistUrl={issue.playlist_url}
+      ariaLabel={t(locale, 'player.aria')}
+      kicker={t(locale, 'player.kicker')}
+      title={t(locale, 'player.title')}
+      copy={t(locale, 'player.copy')}
+      listenLabel={t(locale, 'player.listen')}
+      openLabel={t(locale, 'player.open')}
+      loadAriaLabel={t(locale, 'player.loadAria')}
+    />
+  </header>
+
+  <section aria-labelledby="tracks-heading">
+    <div class="sec-head">
+      <h2 id="tracks-heading">{t(locale, 'sections.tracks')}</h2>
+      <span class="mono">{t(locale, 'sections.tracksMeta', { count: issue.tracks.length })}</span>
+    </div>
+    <div class="playlist">
+      {
+        issue.tracks.map((track) => (
+          <TrackCard
+            track={track}
+            week={issue.week}
+            ratingLabels={ratingLabels}
+            consensusLabel={t(locale, 'source.consensus', { count: track.source_count })}
+          />
+        ))
+      }
+    </div>
+  </section>
+
+  <section aria-labelledby="albums-heading">
+    <div class="sec-head">
+      <h2 id="albums-heading">{t(locale, 'sections.albums')}</h2>
+      <span class="mono">{t(locale, 'sections.albumsMeta', { count: issue.albums.length })}</span>
+    </div>
+    <div class="albgrid">
+      {issue.albums.map((album) => <AlbumCard album={album} />)}
+    </div>
+    <p class="alb-cap">{t(locale, 'sections.albumsCaption')}</p>
+  </section>
+
+  <section aria-labelledby="sources-heading">
+    <div class="sec-head">
+      <h2 id="sources-heading">{t(locale, 'sections.sources')}</h2>
+      <span class="mono">{t(locale, 'sections.sourcesMeta')}</span>
+    </div>
+    <div class="source-strip">
+      {issue.sources.map((source) => <span class="chip">{source}</span>)}
+    </div>
+  </section>
+</BaseLayout>

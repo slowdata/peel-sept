@@ -1,0 +1,8 @@
+---
+import IssueView from '../../components/IssueView.astro';
+import { issues, latestIssue } from '../../data/issues';
+
+const issue = latestIssue;
+---
+
+<IssueView issue={issue} issues={issues} locale="pt" isIndex />

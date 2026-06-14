@@ -1,30 +1,36 @@
 ---
 interface Props {
   playlistUrl?: string | null;
+  ariaLabel: string;
+  kicker: string;
+  title: string;
+  copy: string;
+  listenLabel: string;
+  openLabel: string;
+  loadAriaLabel: string;
 }
 
-const { playlistUrl } = Astro.props;
+const { playlistUrl, ariaLabel, kicker, title, copy, listenLabel, openLabel, loadAriaLabel } =
+  Astro.props;
 ---
 
 {
   playlistUrl && (
-    <section class="playlist-player" data-playlist-player aria-label="Player Spotify da semana">
+    <section class="playlist-player" data-playlist-player aria-label={ariaLabel}>
       <div class="playlist-facade" data-playlist-facade>
         <div>
-          <p class="mono player-kicker">Playlist Spotify</p>
-          <p class="player-title">Ouvir esta edição</p>
-          <p class="player-copy">
-            O player só carrega depois do clique. Antes disso, sem pedidos à Spotify.
-          </p>
+          <p class="mono player-kicker">{kicker}</p>
+          <p class="player-title">{title}</p>
+          <p class="player-copy">{copy}</p>
         </div>
         <div class="player-actions">
           <button
             class="listen-button"
             type="button"
             data-playlist-load
-            aria-label="Carregar o player Spotify desta edição"
+            aria-label={loadAriaLabel}
           >
-            ▶ Ouvir no Spotify
+            {listenLabel}
           </button>
           <a
             class="fallback-link mono"
@@ -32,7 +38,7 @@ const { playlistUrl } = Astro.props;
             target="_blank"
             rel="noopener noreferrer"
           >
-            Abrir no Spotify
+            {openLabel}
           </a>
         </div>
       </div>

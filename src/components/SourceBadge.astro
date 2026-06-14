@@ -2,14 +2,15 @@
 interface Props {
   source: string;
   sourceCount?: number;
+  consensusLabel: string;
 }
 
-const { source, sourceCount = 1 } = Astro.props;
+const { source, sourceCount = 1, consensusLabel } = Astro.props;
 const consensus = sourceCount > 1;
 ---
 
 <span class:list={['source-badge', { consensus }]}>
   {consensus ? '★' : ''}
   <span>{source}</span>
-  {consensus && <span>· {sourceCount} fontes</span>}
+  {consensus && <span>· {consensusLabel}</span>}
 </span>

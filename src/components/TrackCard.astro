@@ -3,12 +3,24 @@ import Rating from './Rating.astro';
 import SourceBadge from './SourceBadge.astro';
 import type { Track } from '../data/issues';
 
+type RatingLabels = {
+  empty: string;
+  aria: string;
+  ban: string;
+  skip: string;
+  meh: string;
+  like: string;
+  love: string;
+};
+
 interface Props {
   track: Track;
   week: string;
+  ratingLabels: RatingLabels;
+  consensusLabel: string;
 }
 
-const { track, week } = Astro.props;
+const { track, week, ratingLabels, consensusLabel } = Astro.props;
 const ratingId = `${week}:${track.artist}:${track.title}`;
 const rank = String(track.rank).padStart(2, '0');
 const label = `${track.artist} — ${track.title}`;
@@ -27,8 +39,12 @@ const label = `${track.artist} — ${track.title}`;
       )
     }
     <div class="artist">
-      {track.artist} · <SourceBadge source={track.source} sourceCount={track.source_count} />
+      {track.artist} · <SourceBadge
+        source={track.source}
+        sourceCount={track.source_count}
+        consensusLabel={consensusLabel}
+      />
     </div>
   </div>
-  <Rating id={ratingId} label={label} />
+  <Rating id={ratingId} label={label} labels={ratingLabels} />
 </article>

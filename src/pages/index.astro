@@ -1,58 +1,8 @@
 ---
-import AlbumCard from '../components/AlbumCard.astro';
-import PlaylistPlayer from '../components/PlaylistPlayer.astro';
-import TrackCard from '../components/TrackCard.astro';
-import BaseLayout from '../layouts/BaseLayout.astro';
+import IssueView from '../components/IssueView.astro';
 import { issues, latestIssue } from '../data/issues';
 
 const issue = latestIssue;
-const description = `${issue.label}: sete faixas e sete álbuns, escolhidos por curadoria humana. Sem algoritmos, sem bolhas.`;
 ---
 
-<BaseLayout issue={issue} issues={issues} description={description}>
-  <header>
-    <h1 class="mark">Peel <em>Sept</em></h1>
-    <p class="lede">
-      Sete músicas, escolhidas e avaliadas todas as semanas. Um diário sonoro,
-      atualizado ao domingo. Sem algoritmos, sem bolhas.
-    </p>
-    <div class="hero-actions">
-      <p class="mono dates">{issue.date_range}</p>
-    </div>
-    <PlaylistPlayer playlistUrl={issue.playlist_url} />
-  </header>
-
-  <section aria-labelledby="tracks-heading">
-    <div class="sec-head">
-      <h2 id="tracks-heading">A Semana</h2>
-      <span class="mono">{issue.tracks.length} faixas · à mão</span>
-    </div>
-    <div class="playlist">
-      {issue.tracks.map((track) => <TrackCard track={track} week={issue.week} />)}
-    </div>
-  </section>
-
-  <section aria-labelledby="albums-heading">
-    <div class="sec-head">
-      <h2 id="albums-heading">Em Rotação</h2>
-      <span class="mono">7 álbuns</span>
-    </div>
-    <div class="albgrid">
-      {issue.albums.map((album) => <AlbumCard album={album} />)}
-    </div>
-    <p class="alb-cap">
-      Sete álbuns a ouvir de fio a pavio. Quando há consenso entre fontes, o
-      quadrado ganha destaque.
-    </p>
-  </section>
-
-  <section aria-labelledby="sources-heading">
-    <div class="sec-head">
-      <h2 id="sources-heading">Fontes</h2>
-      <span class="mono">críticos · labels · rádio</span>
-    </div>
-    <div class="source-strip">
-      {issue.sources.map((source) => <span class="chip">{source}</span>)}
-    </div>
-  </section>
-</BaseLayout>
+<IssueView issue={issue} issues={issues} locale="en" isIndex />
