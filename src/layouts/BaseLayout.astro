@@ -39,7 +39,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Space+Grotesk:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Syne:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -106,10 +106,11 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
   }
 
   body {
-    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-family: 'Syne', system-ui, sans-serif;
     background: var(--bg);
     color: var(--fg);
-    line-height: 1.55;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
     padding: 0 28px;
     -webkit-tap-highlight-color: transparent;
   }
@@ -126,7 +127,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
   }
 
   .mono {
-    font-family: 'Geist Mono', 'IBM Plex Mono', monospace;
+    font-family: 'Geist Mono', monospace;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 11.5px;
@@ -163,9 +164,10 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
     max-width: 26em;
     margin-top: 18px;
     color: var(--muted);
-    font-size: 17px;
+    font-size: 16.5px;
     font-weight: 400;
-    line-height: 1.55;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
   }
 
   .dates {
@@ -178,28 +180,6 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
     align-items: center;
     gap: 14px;
     margin-top: 20px;
-  }
-
-  .playlist-link {
-    display: inline-flex;
-    align-items: center;
-    border: 1px solid var(--line);
-    border-radius: 999px;
-    padding: 7px 10px;
-    color: var(--muted);
-    text-decoration: none;
-    transition:
-      border-color 0.16s ease,
-      color 0.16s ease,
-      background 0.16s ease;
-  }
-
-  .playlist-link:hover,
-  .playlist-link:focus-visible {
-    border-color: var(--accent);
-    background: var(--hover);
-    color: var(--fg);
-    outline: none;
   }
 
   .sec-head {
@@ -232,21 +212,24 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
   }
 
   .num {
-    font-family: 'Geist Mono', 'IBM Plex Mono', monospace;
+    font-family: 'Geist Mono', monospace;
     color: var(--faint);
     font-size: 12px;
   }
 
   .title {
-    font-size: 16px;
+    font-size: 15.5px;
     font-weight: 500;
-    letter-spacing: -0.1px;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
   }
 
   .artist {
-    margin-top: 3px;
+    margin-top: 2px;
     color: var(--muted);
     font-size: 13.5px;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
   }
 
   .src {
@@ -309,7 +292,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
   }
 
   .rlabel {
-    font-family: 'Geist Mono', 'IBM Plex Mono', monospace;
+    font-family: 'Geist Mono', monospace;
     color: var(--faint);
     font-size: 10.5px;
     letter-spacing: 1.6px;
@@ -349,7 +332,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
   }
 
   .alb .n {
-    font-family: 'Geist Mono', 'IBM Plex Mono', monospace;
+    font-family: 'Geist Mono', monospace;
     color: var(--faint);
     font-size: 11px;
   }
@@ -387,7 +370,8 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
     margin-top: 22px;
     color: var(--muted);
     font-size: 14.5px;
-    line-height: 1.5;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
   }
 
   .source-strip {
@@ -430,6 +414,8 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
     margin-top: 16px;
     color: var(--muted);
     font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
   }
 
   .manifesto span {
@@ -485,7 +471,13 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString(
     }
 
     .mark {
-      font-size: 46px;
+      font-size: 44px;
+      letter-spacing: -1px;
+    }
+
+    .lede {
+      max-width: 100%;
+      font-size: 15.5px;
     }
 
     .sec-head {
