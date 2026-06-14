@@ -7,6 +7,12 @@ export type Locale = 'en' | 'pt';
 type Dictionary = Record<string, string>;
 
 const dictionaries: Record<Locale, Dictionary> = { en, pt };
+const dateLocales: Record<Locale, string> = { en: 'en-GB', pt: 'pt' };
+const dateFormatOptions: Intl.DateTimeFormatOptions = {
+  day: 'numeric',
+  month: 'short',
+  year: 'numeric',
+};
 
 export const locales: Locale[] = ['en', 'pt'];
 export const defaultLocale: Locale = 'en';
@@ -31,6 +37,31 @@ export function weekParts(week: string): { year: string; week: string } {
 export function weekLabel(locale: Locale, issue: Issue): string {
   const parts = weekParts(issue.week);
   return t(locale, 'top.weekLabel', parts);
+}
+
+export function formatDateRange(startDate: string, endDate: string, locale: Locale): string {
+  const formatter = new Intl.DateTimeFormat(dateLocales[locale], dateFormatOptions);
+  const start = localDate(startDate);
+  const end = localDate(endDate);
+  if (typeof formatter.formatRange === 'function') {
+    return normalizeDateRange(formatter.formatRange(start, end), locale);
+  }
+  return normalizeDateRange(`${formatter.format(start)} – ${formatter.format(end)}`, locale);
+}
+
+function localDate(value: string): Date {
+  return new Date(`${value}T00:00:00`);
+}
+
+function normalizeDateRange(value: string, locale: Locale): string {
+  const normalized = value
+    .replace(/[\u2009\u202f]/g, ' ')
+    .replace(/\s*–\s*/g, ' – ')
+    .trim();
+  if (locale === 'pt') {
+    return normalized.replace(/ de (\d{4})$/, ' $1');
+  }
+  return normalized;
 }
 
 export function localizedIssuePath(locale: Locale, issue?: Issue): string {

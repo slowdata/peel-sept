@@ -4,7 +4,7 @@ import PlaylistPlayer from './PlaylistPlayer.astro';
 import TrackCard from './TrackCard.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import type { Issue } from '../data/issues';
-import { t, weekLabel, type Locale } from '../i18n';
+import { formatDateRange, normalizeLocale, t, weekLabel, type Locale } from '../i18n';
 
 interface Props {
   issue: Issue;
@@ -13,9 +13,11 @@ interface Props {
   isIndex?: boolean;
 }
 
-const { issue, issues, locale, isIndex = false } = Astro.props;
+const { issue, issues, isIndex = false } = Astro.props;
+const locale = normalizeLocale(Astro.currentLocale ?? Astro.props.locale);
+const issueDateRange = formatDateRange(issue.start_date, issue.end_date, locale);
 const title = `Peel Sept — ${weekLabel(locale, issue)}`;
-const description = `${issue.date_range}: ${t(locale, 'site.description')}`;
+const description = `${issueDateRange}: ${t(locale, 'site.description')}`;
 const ratingLabels = {
   empty: t(locale, 'rating.empty'),
   aria: t(locale, 'rating.aria'),
@@ -39,7 +41,7 @@ const ratingLabels = {
     <h1 class="mark">Peel <em>Sept</em></h1>
     <p class="lede">{t(locale, 'hero.lede')}</p>
     <div class="hero-actions">
-      <p class="mono dates">{issue.date_range}</p>
+      <p class="mono dates">{issueDateRange}</p>
     </div>
     <PlaylistPlayer
       playlistUrl={issue.playlist_url}

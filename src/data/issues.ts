@@ -19,8 +19,8 @@ export type Album = {
 
 export type Issue = {
   week: string;
-  label: string;
-  date_range: string;
+  start_date: string;
+  end_date: string;
   playlist_url?: string | null;
   tracks: Track[];
   albums: Album[];

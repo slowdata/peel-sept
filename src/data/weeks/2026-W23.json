@@ -1,0 +1,137 @@
+{
+  "week": "2026-W23",
+  "start_date": "2026-06-01",
+  "end_date": "2026-06-07",
+  "label": "Semana 23 · 2026",
+  "date_range": "1 — 7 Jun 2026",
+  "playlist_url": "https://open.spotify.com/playlist/7Dka6iXFVEf9QbI2u3Sl0p",
+  "tracks": [
+    {
+      "rank": 1,
+      "artist": "Steve Lacy",
+      "title": "The Feeling",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/3SoarlzPEiF7NgSeGsh44S"
+    },
+    {
+      "rank": 2,
+      "artist": "Tinashe",
+      "title": "Too Easy",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/1gDfAiHvXdPXlUlaWcfxNS"
+    },
+    {
+      "rank": 3,
+      "artist": "Brutalismus 3000",
+      "title": "Gore Louvre",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/2WY1UCJb21XDNztuSEK4Em"
+    },
+    {
+      "rank": 4,
+      "artist": "Nia Archives",
+      "title": "Vertical",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/0ecQazzKkndVD8Ry9Orp9Q"
+    },
+    {
+      "rank": 5,
+      "artist": "Tierra Whack",
+      "title": "Wax Paper",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/6jwFEp5K8fJ8R0yuKKPlCW"
+    },
+    {
+      "rank": 6,
+      "artist": "she’s green",
+      "title": "Close Your Eyes",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/1noGAR76Oa2NLjmCvZxWeU"
+    },
+    {
+      "rank": 7,
+      "artist": "Zoh Amba",
+      "title": "Eyes Full",
+      "source": "NPR",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/2zljKZUav6MQ0xzOPhPkNd"
+    }
+  ],
+  "albums": [
+    {
+      "rank": 1,
+      "artist": "Matías Aguayo",
+      "title": "Anenoa",
+      "source": "The Guardian",
+      "source_count": 1,
+      "link": "https://www.theguardian.com/music/2026/may/29/matias-aguayo-anenoa-review",
+      "spotify_url": null
+    },
+    {
+      "rank": 2,
+      "artist": "Lizzo",
+      "title": "Bitch",
+      "source": "The Guardian",
+      "source_count": 1,
+      "link": "https://www.theguardian.com/music/2026/jun/05/lizzo-bitch-album-review",
+      "spotify_url": null
+    },
+    {
+      "rank": 3,
+      "artist": "Taylor Swift",
+      "title": "I Knew It, I Knew You",
+      "source": "The Guardian",
+      "source_count": 1,
+      "link": "https://www.theguardian.com/music/2026/jun/05/taylor-swift-i-knew-it-i-knew-you-review-toy-story-5",
+      "spotify_url": null
+    },
+    {
+      "rank": 4,
+      "artist": "Kikù Hibino and Merzbow",
+      "title": "Rococo ∞ Echomatter",
+      "source": "The Quietus",
+      "source_count": 1,
+      "link": "https://thequietus.com/quietus-reviews/kiku-hibino-and-merzbow-rococo-echomatter-review/?utm_source=rss&utm_medium=rss&utm_campaign=kiku-hibino-and-merzbow-rococo-echomatter-review",
+      "spotify_url": null
+    },
+    {
+      "rank": 5,
+      "artist": "Neptune",
+      "title": "Play Some Music",
+      "source": "The Quietus",
+      "source_count": 1,
+      "link": "https://thequietus.com/quietus-reviews/neptune-play-some-music-review/?utm_source=rss&utm_medium=rss&utm_campaign=neptune-play-some-music-review",
+      "spotify_url": null
+    },
+    {
+      "rank": 6,
+      "artist": "Hannah Peel & Beibei Wang",
+      "title": "The Endless Dance",
+      "source": "The Quietus",
+      "source_count": 1,
+      "link": "https://thequietus.com/quietus-reviews/hannah-peel-beibei-wang-the-endless-dance-review/?utm_source=rss&utm_medium=rss&utm_campaign=hannah-peel-beibei-wang-the-endless-dance-review",
+      "spotify_url": null
+    },
+    {
+      "rank": 7,
+      "artist": "Khun Narin Electric Phin Band",
+      "title": "III",
+      "source": "The Quietus",
+      "source_count": 1,
+      "link": "https://thequietus.com/quietus-reviews/khun-narin-electric-phin-band-iii-review/?utm_source=rss&utm_medium=rss&utm_campaign=khun-narin-electric-phin-band-iii-review",
+      "spotify_url": null
+    }
+  ],
+  "sources": [
+    "Stereogum",
+    "NPR",
+    "The Guardian",
+    "The Quietus"
+  ]
+}
