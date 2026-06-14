@@ -28,6 +28,7 @@ const {
 const pathIssue = Astro.props.pathIssue === undefined ? issue : Astro.props.pathIssue;
 const baseUrl = Astro.site ?? Astro.url;
 const canonical = new URL(localizedIssuePath(locale, pathIssue ?? undefined), baseUrl).toString();
+const socialImage = new URL(`/og/${issue.week}.png`, baseUrl).toString();
 const alternates = alternateLinks(pathIssue ?? undefined, baseUrl);
 const otherLocale: Locale = locale === 'en' ? 'pt' : 'en';
 ---
@@ -47,16 +48,12 @@ const otherLocale: Locale = locale === 'en' ? 'pt' : 'en';
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={socialImage} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage} />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Syne:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <div class="wrap">
@@ -100,6 +97,38 @@ const otherLocale: Locale = locale === 'en' ? 'pt' : 'en';
 </html>
 
 <style is:global>
+  @font-face {
+    font-family: 'Fraunces';
+    src: url('../assets/fonts/Fraunces-Variable.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400 600;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Fraunces';
+    src: url('../assets/fonts/Fraunces-Italic-Variable.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 400 600;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Syne';
+    src: url('../assets/fonts/Syne-Variable.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400 700;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Geist Mono';
+    src: url('../assets/fonts/GeistMono-Variable.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400 500;
+    font-display: swap;
+  }
+
   :root {
     --bg: #0a0a0a;
     --fg: #f3f1ee;

@@ -1,10 +1,11 @@
 ---
 import AlbumCard from './AlbumCard.astro';
 import PlaylistPlayer from './PlaylistPlayer.astro';
+import ShareButtons from './ShareButtons.astro';
 import TrackCard from './TrackCard.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import type { Issue } from '../data/issues';
-import { formatDateRange, normalizeLocale, t, weekLabel, type Locale } from '../i18n';
+import { formatDateRange, localizedIssuePath, normalizeLocale, t, weekLabel, type Locale } from '../i18n';
 
 interface Props {
   issue: Issue;
@@ -16,8 +17,16 @@ interface Props {
 const { issue, issues, isIndex = false } = Astro.props;
 const locale = normalizeLocale(Astro.currentLocale ?? Astro.props.locale);
 const issueDateRange = formatDateRange(issue.start_date, issue.end_date, locale);
-const title = `Peel Sept — ${weekLabel(locale, issue)}`;
+const issueWeekLabel = weekLabel(locale, issue);
+const title = `Peel Sept — ${issueWeekLabel}`;
 const description = `${issueDateRange}: ${t(locale, 'site.description')}`;
+const baseUrl = Astro.site ?? Astro.url;
+const shareUrl = new URL(localizedIssuePath(locale, issue), baseUrl).toString();
+const instagramImageUrl = new URL(`/ig/${issue.week}.png`, baseUrl).toString();
+const twitterUrl = `https://twitter.com/intent/tweet?${new URLSearchParams({
+  text: t(locale, 'share.tweetText', { week: issueWeekLabel }),
+  url: shareUrl,
+}).toString()}`;
 const ratingLabels = {
   empty: t(locale, 'rating.empty'),
   aria: t(locale, 'rating.aria'),
@@ -43,6 +52,19 @@ const ratingLabels = {
     <div class="hero-actions">
       <p class="mono dates">{issueDateRange}</p>
     </div>
+    <ShareButtons
+      twitterUrl={twitterUrl}
+      instagramImageUrl={instagramImageUrl}
+      instagramDownloadName={`peel-sept-${issue.week}-instagram.png`}
+      nativeTitle={title}
+      nativeText={t(locale, 'share.nativeText', { week: issueWeekLabel })}
+      nativeUrl={shareUrl}
+      kicker={t(locale, 'share.kicker')}
+      xLabel={t(locale, 'share.x')}
+      nativeLabel={t(locale, 'share.native')}
+      nativeAriaLabel={t(locale, 'share.nativeAria')}
+      instagramLabel={t(locale, 'share.instagram')}
+    />
     <PlaylistPlayer
       playlistUrl={issue.playlist_url}
       ariaLabel={t(locale, 'player.aria')}

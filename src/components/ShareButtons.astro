@@ -1,0 +1,120 @@
+---
+interface Props {
+  twitterUrl: string;
+  instagramImageUrl: string;
+  instagramDownloadName: string;
+  nativeTitle: string;
+  nativeText: string;
+  nativeUrl: string;
+  kicker: string;
+  xLabel: string;
+  nativeLabel: string;
+  nativeAriaLabel: string;
+  instagramLabel: string;
+}
+
+const {
+  twitterUrl,
+  instagramImageUrl,
+  instagramDownloadName,
+  nativeTitle,
+  nativeText,
+  nativeUrl,
+  kicker,
+  xLabel,
+  nativeLabel,
+  nativeAriaLabel,
+  instagramLabel,
+} = Astro.props;
+---
+
+<div class="share-tools" aria-label={kicker}>
+  <span class="mono share-kicker">{kicker}</span>
+  <div class="share-links">
+    <a class="share-link" href={twitterUrl} target="_blank" rel="noopener noreferrer">{xLabel}</a>
+    <button
+      class="share-link native-share"
+      type="button"
+      hidden
+      data-native-share
+      data-share-title={nativeTitle}
+      data-share-text={nativeText}
+      data-share-url={nativeUrl}
+      aria-label={nativeAriaLabel}
+    >
+      {nativeLabel}
+    </button>
+    <a class="share-link" href={instagramImageUrl} download={instagramDownloadName}>{instagramLabel}</a>
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll('[data-native-share]').forEach((button) => {
+    if (!('share' in navigator)) {
+      return;
+    }
+
+    button.hidden = false;
+    button.addEventListener('click', async () => {
+      const title = button.getAttribute('data-share-title') || document.title;
+      const text = button.getAttribute('data-share-text') || '';
+      const url = button.getAttribute('data-share-url') || window.location.href;
+
+      try {
+        await navigator.share({ title, text, url });
+      } catch (error) {
+        if (!(error instanceof DOMException && error.name === 'AbortError')) {
+          console.warn('Native share failed', error);
+        }
+      }
+    });
+  });
+</script>
+
+<style>
+  .share-tools {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 22px;
+  }
+
+  .share-kicker {
+    color: var(--faint);
+  }
+
+  .share-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .share-link {
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 7px 11px;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    font: inherit;
+    font-size: 12px;
+    line-height: 1.2;
+    text-decoration: none;
+    transition:
+      border-color 0.18s ease,
+      color 0.18s ease,
+      background 0.18s ease;
+  }
+
+  .share-link:hover,
+  .share-link:focus-visible {
+    border-color: var(--faint);
+    background: var(--hover);
+    color: var(--fg);
+    outline: none;
+  }
+
+  .native-share[hidden] {
+    display: none;
+  }
+</style>
