@@ -54,6 +54,12 @@ const otherLocale: Locale = locale === 'en' ? 'pt' : 'en';
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={socialImage} />
 
+    <!-- Cloudflare Web Analytics (cookieless, no individual tracking) -->
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "acfd6e7c31754dac949534570afe123c"}'
+    ></script>
   </head>
   <body>
     <div class="wrap">
