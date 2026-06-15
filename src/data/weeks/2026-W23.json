@@ -16,14 +16,6 @@
     },
     {
       "rank": 2,
-      "artist": "Tinashe",
-      "title": "Too Easy",
-      "source": "Stereogum",
-      "source_count": 1,
-      "spotify_url": "https://open.spotify.com/track/1gDfAiHvXdPXlUlaWcfxNS"
-    },
-    {
-      "rank": 3,
       "artist": "Brutalismus 3000",
       "title": "Gore Louvre",
       "source": "Stereogum",
@@ -31,7 +23,7 @@
       "spotify_url": "https://open.spotify.com/track/2WY1UCJb21XDNztuSEK4Em"
     },
     {
-      "rank": 4,
+      "rank": 3,
       "artist": "Nia Archives",
       "title": "Vertical",
       "source": "Stereogum",
@@ -39,7 +31,7 @@
       "spotify_url": "https://open.spotify.com/track/0ecQazzKkndVD8Ry9Orp9Q"
     },
     {
-      "rank": 5,
+      "rank": 4,
       "artist": "Tierra Whack",
       "title": "Wax Paper",
       "source": "Stereogum",
@@ -47,7 +39,7 @@
       "spotify_url": "https://open.spotify.com/track/6jwFEp5K8fJ8R0yuKKPlCW"
     },
     {
-      "rank": 6,
+      "rank": 5,
       "artist": "she’s green",
       "title": "Close Your Eyes",
       "source": "Stereogum",
@@ -55,44 +47,25 @@
       "spotify_url": "https://open.spotify.com/track/1noGAR76Oa2NLjmCvZxWeU"
     },
     {
-      "rank": 7,
+      "rank": 6,
       "artist": "Zoh Amba",
       "title": "Eyes Full",
       "source": "NPR",
       "source_count": 1,
       "spotify_url": "https://open.spotify.com/track/2zljKZUav6MQ0xzOPhPkNd"
+    },
+    {
+      "rank": 7,
+      "artist": "Jalen Ngonda",
+      "title": "Doctrine of Love",
+      "source": "NPR",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/0CJHyugq95CyGnDcau66cU"
     }
   ],
   "albums": [
     {
       "rank": 1,
-      "artist": "Matías Aguayo",
-      "title": "Anenoa",
-      "source": "The Guardian",
-      "source_count": 1,
-      "link": "https://www.theguardian.com/music/2026/may/29/matias-aguayo-anenoa-review",
-      "spotify_url": "https://open.spotify.com/album/5AAUBxhjnkc6ezrx6QziHY"
-    },
-    {
-      "rank": 2,
-      "artist": "Lizzo",
-      "title": "Bitch",
-      "source": "The Guardian",
-      "source_count": 1,
-      "link": "https://www.theguardian.com/music/2026/jun/05/lizzo-bitch-album-review",
-      "spotify_url": "https://open.spotify.com/album/2wPyRw9iR2TQQgc8c5NCUk"
-    },
-    {
-      "rank": 3,
-      "artist": "Taylor Swift",
-      "title": "I Knew It, I Knew You",
-      "source": "The Guardian",
-      "source_count": 1,
-      "link": "https://www.theguardian.com/music/2026/jun/05/taylor-swift-i-knew-it-i-knew-you-review-toy-story-5",
-      "spotify_url": "https://open.spotify.com/album/4Ii9whWXI1O1H01ziECRaG"
-    },
-    {
-      "rank": 4,
       "artist": "Kikù Hibino and Merzbow",
       "title": "Rococo ∞ Echomatter",
       "source": "The Quietus",
@@ -101,7 +74,7 @@
       "spotify_url": "https://open.spotify.com/album/67KcOFawdlYMwfjpeo64TF"
     },
     {
-      "rank": 5,
+      "rank": 2,
       "artist": "Neptune",
       "title": "Play Some Music",
       "source": "The Quietus",
@@ -110,7 +83,7 @@
       "spotify_url": "https://open.spotify.com/album/4Dm4emlPFArrg7Cr4QogGV"
     },
     {
-      "rank": 6,
+      "rank": 3,
       "artist": "Hannah Peel & Beibei Wang",
       "title": "The Endless Dance",
       "source": "The Quietus",
@@ -119,13 +92,40 @@
       "spotify_url": "https://open.spotify.com/album/1sqUgnq09kdSWBrxPrqA5F"
     },
     {
-      "rank": 7,
+      "rank": 4,
       "artist": "Khun Narin Electric Phin Band",
       "title": "III",
       "source": "The Quietus",
       "source_count": 1,
       "link": "https://thequietus.com/quietus-reviews/khun-narin-electric-phin-band-iii-review/?utm_source=rss&utm_medium=rss&utm_campaign=khun-narin-electric-phin-band-iii-review",
-      "spotify_url": "https://open.spotify.com/album/6Kyy5wmpVDpFerNwWCLu9T"
+      "spotify_url": null
+    },
+    {
+      "rank": 5,
+      "artist": "Lee “Scratch” Perry & Mouse on Mars",
+      "title": "Spatial, No Problem.",
+      "source": "The Quietus",
+      "source_count": 1,
+      "link": "https://thequietus.com/quietus-reviews/lee-scratch-perry-mouse-on-mars-spatial-no-problem-review/?utm_source=rss&utm_medium=rss&utm_campaign=lee-scratch-perry-mouse-on-mars-spatial-no-problem-review",
+      "spotify_url": "https://open.spotify.com/album/0SX7gjlXxpX1sTFXZYN12P"
+    },
+    {
+      "rank": 6,
+      "artist": "Kurt Vile",
+      "title": "Philadelphia’s Been Good to Me",
+      "source": "The Guardian",
+      "source_count": 1,
+      "link": "https://www.theguardian.com/music/2026/may/21/kurt-vile-philadelphias-been-good-to-me-review-indie-rocks-most-easygoing-dude-gets-existential",
+      "spotify_url": "https://open.spotify.com/album/5AfELtBFbN1hM75hgqc7FI"
+    },
+    {
+      "rank": 7,
+      "artist": "Iceage",
+      "title": "For Love of Grace & the Hereafter",
+      "source": "The Guardian",
+      "source_count": 1,
+      "link": "https://www.theguardian.com/music/2026/may/28/iceage-for-love-of-grace-and-the-hereafter-review",
+      "spotify_url": "https://open.spotify.com/album/1oU9h86D6qcuHNDoGvzpwV"
     }
   ],
   "sources": [
@@ -138,12 +138,12 @@
       "url": "https://www.npr.org/music"
     },
     {
-      "name": "The Guardian",
-      "url": "https://www.theguardian.com/music"
-    },
-    {
       "name": "The Quietus",
       "url": "https://thequietus.com"
+    },
+    {
+      "name": "The Guardian",
+      "url": "https://www.theguardian.com/music"
     }
   ]
 }
