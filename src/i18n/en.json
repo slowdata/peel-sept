@@ -23,6 +23,7 @@
   "player.listen": "▶ Listen on Spotify",
   "player.open": "Open on Spotify",
   "player.loadAria": "Load the Spotify player for this edition",
+  "player.archiveNote": "Archive week — each track opens on Spotify below. The weekly playlist follows the latest edition.",
   "share.kicker": "Share",
   "share.x": "Share on X",
   "share.native": "Share",

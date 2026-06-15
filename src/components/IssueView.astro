@@ -16,6 +16,11 @@ interface Props {
 
 const { issue, issues, isIndex = false } = Astro.props;
 const locale = normalizeLocale(Astro.currentLocale ?? Astro.props.locale);
+// A playlist Spotify é rolante (um só URL, as faixas trocam). Só faz sentido
+// na edição mais recente; no histórico mostramos uma nota e as faixas abrem
+// soltas no Spotify (TrackCard já liga cada título).
+const latestWeek = issues.map((item) => item.week).sort().at(-1);
+const isLatest = issue.week === latestWeek;
 const issueDateRange = formatDateRange(issue.start_date, issue.end_date, locale);
 const issueWeekLabel = weekLabel(locale, issue);
 const title = `Peel Sept — ${issueWeekLabel}`;
@@ -65,16 +70,22 @@ const ratingLabels = {
       nativeAriaLabel={t(locale, 'share.nativeAria')}
       instagramLabel={t(locale, 'share.instagram')}
     />
-    <PlaylistPlayer
-      playlistUrl={issue.playlist_url}
-      ariaLabel={t(locale, 'player.aria')}
-      kicker={t(locale, 'player.kicker')}
-      title={t(locale, 'player.title')}
-      copy={t(locale, 'player.copy')}
-      listenLabel={t(locale, 'player.listen')}
-      openLabel={t(locale, 'player.open')}
-      loadAriaLabel={t(locale, 'player.loadAria')}
-    />
+    {
+      isLatest ? (
+        <PlaylistPlayer
+          playlistUrl={issue.playlist_url}
+          ariaLabel={t(locale, 'player.aria')}
+          kicker={t(locale, 'player.kicker')}
+          title={t(locale, 'player.title')}
+          copy={t(locale, 'player.copy')}
+          listenLabel={t(locale, 'player.listen')}
+          openLabel={t(locale, 'player.open')}
+          loadAriaLabel={t(locale, 'player.loadAria')}
+        />
+      ) : (
+        <p class="archive-note">{t(locale, 'player.archiveNote')}</p>
+      )
+    }
   </header>
 
   <section aria-labelledby="tracks-heading">
