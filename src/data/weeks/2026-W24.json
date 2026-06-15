@@ -16,6 +16,14 @@
     },
     {
       "rank": 2,
+      "artist": "Marci",
+      "title": "Butterfly Sticker",
+      "source": "Gorilla vs Bear",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/3tCJl3lsma79PYa4Wwblss"
+    },
+    {
+      "rank": 3,
       "artist": "Snag",
       "title": "Unarrest Me",
       "source": "Stereogum",
@@ -23,7 +31,7 @@
       "spotify_url": "https://open.spotify.com/track/2umtuon9L2esTDr3mrAWKh"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "artist": "Hank Heaven",
       "title": "Thread",
       "source": "Stereogum",
@@ -31,20 +39,28 @@
       "spotify_url": "https://open.spotify.com/track/2NMLvHZYJSLxgohwDt3oXx"
     },
     {
-      "rank": 4,
+      "rank": 5,
+      "artist": "Hovvdy",
+      "title": "Blast",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/6iDEHohlNFZ6iMN4pqmFq0"
+    },
+    {
+      "rank": 6,
+      "artist": "Gloorp",
+      "title": "Ice Bath",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/4Elamq934Wl1jtThq5bAkO"
+    },
+    {
+      "rank": 7,
       "artist": "Six Sex",
       "title": "ULTRA",
       "source": "NPR",
       "source_count": 1,
       "spotify_url": "https://open.spotify.com/track/4OYdQQQQ26Zg1PJS4oXyIf"
-    },
-    {
-      "rank": 5,
-      "artist": "YHWH Nailgun",
-      "title": "Magazine",
-      "source": "NPR",
-      "source_count": 1,
-      "spotify_url": "https://open.spotify.com/track/7G3wBTNw1LLOgjMDi620ww"
     }
   ],
   "albums": [

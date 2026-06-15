@@ -16,6 +16,14 @@
     },
     {
       "rank": 2,
+      "artist": "Tinashe",
+      "title": "Too Easy",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/1gDfAiHvXdPXlUlaWcfxNS"
+    },
+    {
+      "rank": 3,
       "artist": "Brutalismus 3000",
       "title": "Gore Louvre",
       "source": "Stereogum",
@@ -23,7 +31,7 @@
       "spotify_url": "https://open.spotify.com/track/2WY1UCJb21XDNztuSEK4Em"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "artist": "Nia Archives",
       "title": "Vertical",
       "source": "Stereogum",
@@ -31,7 +39,7 @@
       "spotify_url": "https://open.spotify.com/track/0ecQazzKkndVD8Ry9Orp9Q"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "artist": "Tierra Whack",
       "title": "Wax Paper",
       "source": "Stereogum",
@@ -39,7 +47,7 @@
       "spotify_url": "https://open.spotify.com/track/6jwFEp5K8fJ8R0yuKKPlCW"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "artist": "she’s green",
       "title": "Close Your Eyes",
       "source": "Stereogum",
@@ -47,20 +55,12 @@
       "spotify_url": "https://open.spotify.com/track/1noGAR76Oa2NLjmCvZxWeU"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "artist": "Zoh Amba",
       "title": "Eyes Full",
       "source": "NPR",
       "source_count": 1,
       "spotify_url": "https://open.spotify.com/track/2zljKZUav6MQ0xzOPhPkNd"
-    },
-    {
-      "rank": 7,
-      "artist": "Jalen Ngonda",
-      "title": "Doctrine of Love",
-      "source": "NPR",
-      "source_count": 1,
-      "spotify_url": "https://open.spotify.com/track/0CJHyugq95CyGnDcau66cU"
     }
   ],
   "albums": [
