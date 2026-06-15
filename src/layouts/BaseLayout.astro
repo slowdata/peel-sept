@@ -445,6 +445,16 @@ const otherLocale: Locale = locale === 'en' ? 'pt' : 'en';
     border-color: color-mix(in srgb, var(--accent), var(--line) 45%);
   }
 
+  /* Slot vazio: mantém a grelha sempre com 7 quadrados, em estado desativado. */
+  .alb-empty {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  .alb-empty .n {
+    color: var(--line);
+  }
+
   .alb-cap {
     margin-top: 22px;
     color: var(--muted);

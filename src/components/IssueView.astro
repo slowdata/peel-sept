@@ -113,7 +113,17 @@ const ratingLabels = {
       <span class="mono">{t(locale, 'sections.albumsMeta', { count: issue.albums.length })}</span>
     </div>
     <div class="albgrid">
-      {issue.albums.map((album) => <AlbumCard album={album} />)}
+      {
+        Array.from({ length: 7 }).map((_, i) =>
+          issue.albums[i] ? (
+            <AlbumCard album={issue.albums[i]} />
+          ) : (
+            <div class="alb alb-empty" aria-hidden="true">
+              <span class="n">{String(i + 1).padStart(2, '0')}</span>
+            </div>
+          )
+        )
+      }
     </div>
     <p class="alb-cap">{t(locale, 'sections.albumsCaption')}</p>
   </section>
