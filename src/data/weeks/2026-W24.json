@@ -129,10 +129,25 @@
     }
   ],
   "sources": [
-    "Gorilla vs Bear",
-    "Stereogum",
-    "NPR",
-    "The Guardian",
-    "The Quietus"
+    {
+      "name": "Gorilla vs Bear",
+      "url": "https://www.gorillavsbear.net"
+    },
+    {
+      "name": "Stereogum",
+      "url": "https://www.stereogum.com"
+    },
+    {
+      "name": "NPR",
+      "url": "https://www.npr.org/music"
+    },
+    {
+      "name": "The Guardian",
+      "url": "https://www.theguardian.com/music"
+    },
+    {
+      "name": "The Quietus",
+      "url": "https://thequietus.com"
+    }
   ]
 }

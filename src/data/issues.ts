@@ -24,7 +24,12 @@ export type Issue = {
   playlist_url?: string | null;
   tracks: Track[];
   albums: Album[];
-  sources: string[];
+  sources: Source[];
+};
+
+export type Source = {
+  name: string;
+  url: string | null;
 };
 
 const modules = import.meta.glob('./weeks/*.json', { eager: true });

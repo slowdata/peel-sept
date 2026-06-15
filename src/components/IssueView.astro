@@ -124,7 +124,17 @@ const ratingLabels = {
       <span class="mono">{t(locale, 'sections.sourcesMeta')}</span>
     </div>
     <div class="source-strip">
-      {issue.sources.map((source) => <span class="chip">{source}</span>)}
+      {
+        issue.sources.map((source) =>
+          source.url ? (
+            <a class="chip" href={source.url} target="_blank" rel="noopener noreferrer">
+              {source.name}
+            </a>
+          ) : (
+            <span class="chip">{source.name}</span>
+          )
+        )
+      }
     </div>
   </section>
 </BaseLayout>

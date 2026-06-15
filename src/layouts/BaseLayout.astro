@@ -462,6 +462,20 @@ const otherLocale: Locale = locale === 'en' ? 'pt' : 'en';
     font-size: 12px;
   }
 
+  a.chip {
+    text-decoration: none;
+    transition:
+      border-color 0.16s ease,
+      color 0.16s ease;
+  }
+
+  a.chip:hover,
+  a.chip:focus-visible {
+    border-color: var(--accent);
+    color: var(--fg);
+    outline: none;
+  }
+
   footer {
     margin: 100px 0 70px;
     padding-top: 30px;
