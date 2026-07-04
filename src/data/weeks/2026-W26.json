@@ -71,7 +71,8 @@
       "source": "The Guardian, The Quietus",
       "source_count": 2,
       "link": "https://www.theguardian.com/music/2026/jun/12/olivia-rodrigo-you-seem-pretty-sad-for-a-girl-so-in-love-album-review",
-      "spotify_url": "https://open.spotify.com/album/3WZZF72ihlKPZBS4zSsNHl"
+      "spotify_url": "https://open.spotify.com/album/3WZZF72ihlKPZBS4zSsNHl",
+      "spotify_match": "resolved"
     },
     {
       "rank": 2,
@@ -80,7 +81,8 @@
       "source": "Ghostly International (Bandcamp)",
       "source_count": 1,
       "link": "https://whateva.bandcamp.com/album/whatever-the-weather-ii?label=1560012315&tab=music",
-      "spotify_url": "https://open.spotify.com/album/6c2tadUprT8mxXulNmZ1dc"
+      "spotify_url": "https://open.spotify.com/album/6c2tadUprT8mxXulNmZ1dc",
+      "spotify_match": "resolved"
     },
     {
       "rank": 3,
@@ -89,7 +91,8 @@
       "source": "Aquarium Drunkard",
       "source_count": 1,
       "link": "https://open.spotify.com/album/3skYxKUaW4eEybNFSfpcK8",
-      "spotify_url": "https://open.spotify.com/album/3skYxKUaW4eEybNFSfpcK8"
+      "spotify_url": "https://open.spotify.com/album/3skYxKUaW4eEybNFSfpcK8",
+      "spotify_match": "direct"
     },
     {
       "rank": 4,
@@ -98,7 +101,8 @@
       "source": "Pitchfork",
       "source_count": 1,
       "link": "https://pitchfork.com/reviews/albums/boards-of-canada-inferno/",
-      "spotify_url": "https://open.spotify.com/album/0mu3EvWYfNwBfISSg0q03p"
+      "spotify_url": "https://open.spotify.com/album/0mu3EvWYfNwBfISSg0q03p",
+      "spotify_match": "resolved"
     },
     {
       "rank": 5,
@@ -107,7 +111,8 @@
       "source": "The Guardian",
       "source_count": 1,
       "link": "https://www.theguardian.com/music/2026/jun/18/myles-smith-my-mess-my-heart-my-life-review",
-      "spotify_url": "https://open.spotify.com/album/08u2urMBBJIz9kMwAl08yI"
+      "spotify_url": "https://open.spotify.com/album/08u2urMBBJIz9kMwAl08yI",
+      "spotify_match": "resolved"
     },
     {
       "rank": 6,
@@ -116,7 +121,8 @@
       "source": "The Guardian",
       "source_count": 1,
       "link": "https://www.theguardian.com/music/2026/jun/25/muse-the-wow-signal-review",
-      "spotify_url": "https://open.spotify.com/album/6TObgE5QDLYzA3Exu5vGhS"
+      "spotify_url": "https://open.spotify.com/album/6TObgE5QDLYzA3Exu5vGhS",
+      "spotify_match": "resolved"
     },
     {
       "rank": 7,
@@ -125,7 +131,8 @@
       "source": "The Quietus",
       "source_count": 1,
       "link": "https://thequietus.com/quietus-reviews/sian-arli-well-get-there-review/?utm_source=rss&utm_medium=rss&utm_campaign=sian-arli-well-get-there-review",
-      "spotify_url": "https://open.spotify.com/album/6zzhkS9g9VH9MJnNAHw51X"
+      "spotify_url": "https://open.spotify.com/album/6zzhkS9g9VH9MJnNAHw51X",
+      "spotify_match": "resolved"
     }
   ],
   "sources": [

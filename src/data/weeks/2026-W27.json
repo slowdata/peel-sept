@@ -71,7 +71,8 @@
       "source": "The Guardian, Pitchfork, The Quietus",
       "source_count": 3,
       "link": "https://www.theguardian.com/music/2026/jun/12/olivia-rodrigo-you-seem-pretty-sad-for-a-girl-so-in-love-album-review",
-      "spotify_url": "https://open.spotify.com/album/3WZZF72ihlKPZBS4zSsNHl"
+      "spotify_url": "https://open.spotify.com/album/3WZZF72ihlKPZBS4zSsNHl",
+      "spotify_match": "resolved"
     },
     {
       "rank": 2,
@@ -80,7 +81,8 @@
       "source": "Aquarium Drunkard, Pitchfork",
       "source_count": 2,
       "link": "https://aquariumdrunkard.com/2026/06/01/sml-the-aquarium-drunkard-interview/",
-      "spotify_url": "https://open.spotify.com/album/6gzpfdTXwjYjsp9VTvTyNu"
+      "spotify_url": "https://open.spotify.com/album/6gzpfdTXwjYjsp9VTvTyNu",
+      "spotify_match": "direct"
     },
     {
       "rank": 3,
@@ -89,7 +91,8 @@
       "source": "Aquarium Drunkard, Pitchfork",
       "source_count": 2,
       "link": "https://aquariumdrunkard.com/2026/06/06/boards-of-canada-inferno/",
-      "spotify_url": "https://open.spotify.com/album/0mu3EvWYfNwBfISSg0q03p"
+      "spotify_url": "https://open.spotify.com/album/0mu3EvWYfNwBfISSg0q03p",
+      "spotify_match": "direct"
     },
     {
       "rank": 4,
@@ -98,7 +101,8 @@
       "source": "Ghostly International (Bandcamp)",
       "source_count": 1,
       "link": "https://goyagumbani.bandcamp.com/album/warlord-of-the-weejuns?label=1560012315&tab=music",
-      "spotify_url": "https://open.spotify.com/album/0z9rMVfqz2MY5DLLyB7tSP"
+      "spotify_url": "https://open.spotify.com/album/0z9rMVfqz2MY5DLLyB7tSP",
+      "spotify_match": "resolved"
     },
     {
       "rank": 5,
@@ -107,7 +111,8 @@
       "source": "Ghostly International (Bandcamp)",
       "source_count": 1,
       "link": "https://htrk.bandcamp.com/album/swimming-pool-puddles-on-my-pillow?label=1560012315&tab=music",
-      "spotify_url": "https://open.spotify.com/album/5Fz76M7GkaDO8pObe6MRFs"
+      "spotify_url": "https://open.spotify.com/album/5Fz76M7GkaDO8pObe6MRFs",
+      "spotify_match": "resolved"
     },
     {
       "rank": 6,
@@ -116,7 +121,8 @@
       "source": "Ghostly International (Bandcamp)",
       "source_count": 1,
       "link": "https://quicklyquickly.bandcamp.com/album/i-heard-that-noise?label=1560012315&tab=music",
-      "spotify_url": "https://open.spotify.com/album/3hXswlXaEoYMiBQ9TZN2wR"
+      "spotify_url": "https://open.spotify.com/album/3hXswlXaEoYMiBQ9TZN2wR",
+      "spotify_match": "resolved"
     },
     {
       "rank": 7,
@@ -125,7 +131,8 @@
       "source": "Ghostly International (Bandcamp)",
       "source_count": 1,
       "link": "https://joviale.bandcamp.com/track/moonshine?label=1560012315&tab=music",
-      "spotify_url": "https://open.spotify.com/album/06goNRgHCyVpJJl9axXb5L"
+      "spotify_url": "https://open.spotify.com/album/06goNRgHCyVpJJl9axXb5L",
+      "spotify_match": "resolved"
     }
   ],
   "sources": [

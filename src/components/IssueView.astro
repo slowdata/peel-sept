@@ -116,10 +116,13 @@ const ratingLabels = {
       {
         Array.from({ length: 7 }).map((_, i) =>
           issue.albums[i] ? (
-            <AlbumCard album={issue.albums[i]} />
+            <AlbumCard album={issue.albums[i]} locale={locale} />
           ) : (
-            <div class="alb alb-empty" aria-hidden="true">
-              <span class="n">{String(i + 1).padStart(2, '0')}</span>
+            <div class="alb-wrap alb-wrap-empty" aria-hidden="true">
+              <div class="alb alb-empty">
+                <span class="n">{String(i + 1).padStart(2, '0')}</span>
+              </div>
+              <span class="alb-source alb-source-empty">&nbsp;</span>
             </div>
           )
         )

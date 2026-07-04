@@ -7,6 +7,8 @@ export type Track = {
   spotify_url: string | null;
 };
 
+export type AlbumSpotifyMatch = 'direct' | 'resolved' | 'search';
+
 export type Album = {
   rank: number;
   artist: string;
@@ -15,6 +17,7 @@ export type Album = {
   source_count: number;
   link: string | null;
   spotify_url: string | null;
+  spotify_match?: AlbumSpotifyMatch | null;
 };
 
 export type Issue = {

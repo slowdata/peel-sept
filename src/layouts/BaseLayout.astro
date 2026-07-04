@@ -390,10 +390,17 @@ const otherLocale: Locale = locale === 'en' ? 'pt' : 'en';
     margin-top: 26px;
   }
 
+  .alb-wrap {
+    display: grid;
+    gap: 7px;
+    min-width: 0;
+  }
+
   .alb {
     position: relative;
     display: grid;
     aspect-ratio: 1;
+    width: 100%;
     place-items: center;
     border: 1px dashed var(--line);
     border-radius: 10px;
@@ -453,6 +460,32 @@ const otherLocale: Locale = locale === 'en' ? 'pt' : 'en';
 
   .alb-empty .n {
     color: var(--line);
+  }
+
+  .alb-source {
+    justify-self: center;
+    max-width: 100%;
+    overflow: hidden;
+    color: var(--faint);
+    font-family: 'Geist Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: color 0.16s ease;
+  }
+
+  .alb-source:hover,
+  .alb-source:focus-visible {
+    color: var(--accent);
+    outline: none;
+  }
+
+  .alb-source-empty {
+    pointer-events: none;
   }
 
   .alb-cap {

@@ -71,7 +71,8 @@
       "source": "The Quietus",
       "source_count": 1,
       "link": "https://thequietus.com/quietus-reviews/kiku-hibino-and-merzbow-rococo-echomatter-review/?utm_source=rss&utm_medium=rss&utm_campaign=kiku-hibino-and-merzbow-rococo-echomatter-review",
-      "spotify_url": "https://open.spotify.com/album/67KcOFawdlYMwfjpeo64TF"
+      "spotify_url": "https://open.spotify.com/album/67KcOFawdlYMwfjpeo64TF",
+      "spotify_match": "resolved"
     },
     {
       "rank": 2,
@@ -80,7 +81,8 @@
       "source": "The Quietus",
       "source_count": 1,
       "link": "https://thequietus.com/quietus-reviews/neptune-play-some-music-review/?utm_source=rss&utm_medium=rss&utm_campaign=neptune-play-some-music-review",
-      "spotify_url": "https://open.spotify.com/album/4Dm4emlPFArrg7Cr4QogGV"
+      "spotify_url": "https://open.spotify.com/album/4Dm4emlPFArrg7Cr4QogGV",
+      "spotify_match": "resolved"
     },
     {
       "rank": 3,
@@ -89,7 +91,8 @@
       "source": "The Quietus",
       "source_count": 1,
       "link": "https://thequietus.com/quietus-reviews/hannah-peel-beibei-wang-the-endless-dance-review/?utm_source=rss&utm_medium=rss&utm_campaign=hannah-peel-beibei-wang-the-endless-dance-review",
-      "spotify_url": "https://open.spotify.com/album/1sqUgnq09kdSWBrxPrqA5F"
+      "spotify_url": "https://open.spotify.com/album/1sqUgnq09kdSWBrxPrqA5F",
+      "spotify_match": "resolved"
     },
     {
       "rank": 4,
@@ -98,7 +101,8 @@
       "source": "The Quietus",
       "source_count": 1,
       "link": "https://thequietus.com/quietus-reviews/khun-narin-electric-phin-band-iii-review/?utm_source=rss&utm_medium=rss&utm_campaign=khun-narin-electric-phin-band-iii-review",
-      "spotify_url": null
+      "spotify_url": "https://open.spotify.com/search/Khun%20Narin%20Electric%20Phin%20Band%20III",
+      "spotify_match": "search"
     },
     {
       "rank": 5,
@@ -107,7 +111,8 @@
       "source": "The Quietus",
       "source_count": 1,
       "link": "https://thequietus.com/quietus-reviews/lee-scratch-perry-mouse-on-mars-spatial-no-problem-review/?utm_source=rss&utm_medium=rss&utm_campaign=lee-scratch-perry-mouse-on-mars-spatial-no-problem-review",
-      "spotify_url": "https://open.spotify.com/album/0SX7gjlXxpX1sTFXZYN12P"
+      "spotify_url": "https://open.spotify.com/album/0SX7gjlXxpX1sTFXZYN12P",
+      "spotify_match": "resolved"
     },
     {
       "rank": 6,
@@ -116,7 +121,8 @@
       "source": "The Guardian",
       "source_count": 1,
       "link": "https://www.theguardian.com/music/2026/may/21/kurt-vile-philadelphias-been-good-to-me-review-indie-rocks-most-easygoing-dude-gets-existential",
-      "spotify_url": "https://open.spotify.com/album/5AfELtBFbN1hM75hgqc7FI"
+      "spotify_url": "https://open.spotify.com/album/5AfELtBFbN1hM75hgqc7FI",
+      "spotify_match": "resolved"
     },
     {
       "rank": 7,
@@ -125,7 +131,8 @@
       "source": "The Guardian",
       "source_count": 1,
       "link": "https://www.theguardian.com/music/2026/may/28/iceage-for-love-of-grace-and-the-hereafter-review",
-      "spotify_url": "https://open.spotify.com/album/1oU9h86D6qcuHNDoGvzpwV"
+      "spotify_url": "https://open.spotify.com/album/1oU9h86D6qcuHNDoGvzpwV",
+      "spotify_match": "resolved"
     }
   ],
   "sources": [
