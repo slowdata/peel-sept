@@ -1,0 +1,157 @@
+{
+  "week": "2026-W27",
+  "start_date": "2026-06-29",
+  "end_date": "2026-07-05",
+  "label": "Semana 27 · 2026",
+  "date_range": "29 Jun — 5 Jul 2026",
+  "playlist_url": "https://open.spotify.com/playlist/3iHETIGrWBdoY3a8jNrMox",
+  "tracks": [
+    {
+      "rank": 1,
+      "artist": "Bloc Party",
+      "title": "Love Bombs",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/3i9GlsRVr730iQSqf6plLt"
+    },
+    {
+      "rank": 2,
+      "artist": "Margaret Glaspy",
+      "title": "That Rose",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/4bes9Z1CgrgTXSRzFwU1xM"
+    },
+    {
+      "rank": 3,
+      "artist": "Slothrust",
+      "title": "Burn The Deck",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/3FR6164f7Qk4zAhJWvqb9i"
+    },
+    {
+      "rank": 4,
+      "artist": "Laura Veirs",
+      "title": "Pulse",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/3a3OqBxj6fAVprJBhg4MF2"
+    },
+    {
+      "rank": 5,
+      "artist": "Westside Cowboy",
+      "title": "Pin Up Boys",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/7yOJ44Mql1jwHRUjziYZYo"
+    },
+    {
+      "rank": 6,
+      "artist": "Peter Gabriel",
+      "title": "I Belong To The Sky",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/1yFOL8IHl4lhewcOgRvsaB"
+    },
+    {
+      "rank": 7,
+      "artist": "Winter",
+      "title": "hollow (mixtape version)",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/5M1mgbODDYNTUOHfZQUENo"
+    }
+  ],
+  "albums": [
+    {
+      "rank": 1,
+      "artist": "Olivia Rodrigo",
+      "title": "you seem pretty sad for a girl so in love",
+      "source": "The Guardian, Pitchfork, The Quietus",
+      "source_count": 3,
+      "link": "https://www.theguardian.com/music/2026/jun/12/olivia-rodrigo-you-seem-pretty-sad-for-a-girl-so-in-love-album-review",
+      "spotify_url": "https://open.spotify.com/album/3WZZF72ihlKPZBS4zSsNHl"
+    },
+    {
+      "rank": 2,
+      "artist": "SML",
+      "title": "Spontaneous Music Live",
+      "source": "Aquarium Drunkard, Pitchfork",
+      "source_count": 2,
+      "link": "https://aquariumdrunkard.com/2026/06/01/sml-the-aquarium-drunkard-interview/",
+      "spotify_url": "https://open.spotify.com/album/6gzpfdTXwjYjsp9VTvTyNu"
+    },
+    {
+      "rank": 3,
+      "artist": "Boards of Canada",
+      "title": "Inferno",
+      "source": "Aquarium Drunkard, Pitchfork",
+      "source_count": 2,
+      "link": "https://aquariumdrunkard.com/2026/06/06/boards-of-canada-inferno/",
+      "spotify_url": "https://open.spotify.com/album/0mu3EvWYfNwBfISSg0q03p"
+    },
+    {
+      "rank": 4,
+      "artist": "Goya Gumbani",
+      "title": "Warlord of the Weejuns",
+      "source": "Ghostly International (Bandcamp)",
+      "source_count": 1,
+      "link": "https://goyagumbani.bandcamp.com/album/warlord-of-the-weejuns?label=1560012315&tab=music",
+      "spotify_url": "https://open.spotify.com/album/0z9rMVfqz2MY5DLLyB7tSP"
+    },
+    {
+      "rank": 5,
+      "artist": "HTRK",
+      "title": "Swimming Pool / Puddles on My Pillow",
+      "source": "Ghostly International (Bandcamp)",
+      "source_count": 1,
+      "link": "https://htrk.bandcamp.com/album/swimming-pool-puddles-on-my-pillow?label=1560012315&tab=music",
+      "spotify_url": "https://open.spotify.com/album/5Fz76M7GkaDO8pObe6MRFs"
+    },
+    {
+      "rank": 6,
+      "artist": "quickly, quickly",
+      "title": "I Heard That Noise",
+      "source": "Ghostly International (Bandcamp)",
+      "source_count": 1,
+      "link": "https://quicklyquickly.bandcamp.com/album/i-heard-that-noise?label=1560012315&tab=music",
+      "spotify_url": "https://open.spotify.com/album/3hXswlXaEoYMiBQ9TZN2wR"
+    },
+    {
+      "rank": 7,
+      "artist": "Joviale",
+      "title": "Moonshine",
+      "source": "Ghostly International (Bandcamp)",
+      "source_count": 1,
+      "link": "https://joviale.bandcamp.com/track/moonshine?label=1560012315&tab=music",
+      "spotify_url": "https://open.spotify.com/album/06goNRgHCyVpJJl9axXb5L"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Stereogum",
+      "url": "https://www.stereogum.com"
+    },
+    {
+      "name": "The Guardian",
+      "url": "https://www.theguardian.com/music"
+    },
+    {
+      "name": "Pitchfork",
+      "url": "https://pitchfork.com"
+    },
+    {
+      "name": "The Quietus",
+      "url": "https://thequietus.com"
+    },
+    {
+      "name": "Aquarium Drunkard",
+      "url": "https://aquariumdrunkard.com"
+    },
+    {
+      "name": "Ghostly International (Bandcamp)",
+      "url": "https://ghostly.bandcamp.com"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "week": "2026-W26",
+  "start_date": "2026-06-22",
+  "end_date": "2026-06-28",
+  "label": "Semana 26 · 2026",
+  "date_range": "22 — 28 Jun 2026",
+  "playlist_url": "https://open.spotify.com/playlist/3iHETIGrWBdoY3a8jNrMox",
+  "tracks": [
+    {
+      "rank": 1,
+      "artist": "Boy Harsher",
+      "title": "Jeans",
+      "source": "Gorilla vs Bear",
+      "source_count": 2,
+      "spotify_url": "https://open.spotify.com/track/0HB0UXiIT3HUjDid2OGXH5"
+    },
+    {
+      "rank": 2,
+      "artist": "Sophia Stel",
+      "title": "Molly in the Club",
+      "source": "Gorilla vs Bear",
+      "source_count": 2,
+      "spotify_url": "https://open.spotify.com/track/1ngbCM8cVBEcE3yCFdelAU"
+    },
+    {
+      "rank": 3,
+      "artist": "Cel Ray",
+      "title": "Toxic",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/6QD0UXAvMy7byz4eFSwlxm"
+    },
+    {
+      "rank": 4,
+      "artist": "Smirk",
+      "title": "Going Off To Die",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/4Njzu2hXZpV6KtNJyNejBA"
+    },
+    {
+      "rank": 5,
+      "artist": "EsDeeKid",
+      "title": "RockWave",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/7umWv57SsTnh1P4FFTa8bg"
+    },
+    {
+      "rank": 6,
+      "artist": "Phoebe Bridgers",
+      "title": "Lost Boys",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/2Rbkkd9pKlLtBOhsp5NmSI"
+    },
+    {
+      "rank": 7,
+      "artist": "Carly Rae Jepsen",
+      "title": "On Wires",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/29KCgoJwNofk7hF4Z1wsEB"
+    }
+  ],
+  "albums": [
+    {
+      "rank": 1,
+      "artist": "Olivia Rodrigo",
+      "title": "You Seem Pretty Sad For A Girl So In Love",
+      "source": "The Guardian, The Quietus",
+      "source_count": 2,
+      "link": "https://www.theguardian.com/music/2026/jun/12/olivia-rodrigo-you-seem-pretty-sad-for-a-girl-so-in-love-album-review",
+      "spotify_url": "https://open.spotify.com/album/3WZZF72ihlKPZBS4zSsNHl"
+    },
+    {
+      "rank": 2,
+      "artist": "Whatever The Weather",
+      "title": "Whatever The Weather II",
+      "source": "Ghostly International (Bandcamp)",
+      "source_count": 1,
+      "link": "https://whateva.bandcamp.com/album/whatever-the-weather-ii?label=1560012315&tab=music",
+      "spotify_url": "https://open.spotify.com/album/6c2tadUprT8mxXulNmZ1dc"
+    },
+    {
+      "rank": 3,
+      "artist": "Jeff Parker ETA IVtet",
+      "title": "Happy Today",
+      "source": "Aquarium Drunkard",
+      "source_count": 1,
+      "link": "https://open.spotify.com/album/3skYxKUaW4eEybNFSfpcK8",
+      "spotify_url": "https://open.spotify.com/album/3skYxKUaW4eEybNFSfpcK8"
+    },
+    {
+      "rank": 4,
+      "artist": "Boards Of Canada",
+      "title": "Inferno",
+      "source": "Pitchfork",
+      "source_count": 1,
+      "link": "https://pitchfork.com/reviews/albums/boards-of-canada-inferno/",
+      "spotify_url": "https://open.spotify.com/album/0mu3EvWYfNwBfISSg0q03p"
+    },
+    {
+      "rank": 5,
+      "artist": "Myles Smith",
+      "title": "My Mess, My Heart, My Life",
+      "source": "The Guardian",
+      "source_count": 1,
+      "link": "https://www.theguardian.com/music/2026/jun/18/myles-smith-my-mess-my-heart-my-life-review",
+      "spotify_url": "https://open.spotify.com/album/08u2urMBBJIz9kMwAl08yI"
+    },
+    {
+      "rank": 6,
+      "artist": "Muse",
+      "title": "The Wow! Signal",
+      "source": "The Guardian",
+      "source_count": 1,
+      "link": "https://www.theguardian.com/music/2026/jun/25/muse-the-wow-signal-review",
+      "spotify_url": "https://open.spotify.com/album/6TObgE5QDLYzA3Exu5vGhS"
+    },
+    {
+      "rank": 7,
+      "artist": "Sian Arli",
+      "title": "We’ll Get There",
+      "source": "The Quietus",
+      "source_count": 1,
+      "link": "https://thequietus.com/quietus-reviews/sian-arli-well-get-there-review/?utm_source=rss&utm_medium=rss&utm_campaign=sian-arli-well-get-there-review",
+      "spotify_url": "https://open.spotify.com/album/6zzhkS9g9VH9MJnNAHw51X"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Gorilla vs Bear",
+      "url": "https://www.gorillavsbear.net"
+    },
+    {
+      "name": "Stereogum",
+      "url": "https://www.stereogum.com"
+    },
+    {
+      "name": "The Guardian",
+      "url": "https://www.theguardian.com/music"
+    },
+    {
+      "name": "The Quietus",
+      "url": "https://thequietus.com"
+    },
+    {
+      "name": "Ghostly International (Bandcamp)",
+      "url": "https://ghostly.bandcamp.com"
+    },
+    {
+      "name": "Aquarium Drunkard",
+      "url": "https://aquariumdrunkard.com"
+    },
+    {
+      "name": "Pitchfork",
+      "url": "https://pitchfork.com"
+    }
+  ]
+}
