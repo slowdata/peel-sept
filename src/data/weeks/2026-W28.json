@@ -1,0 +1,168 @@
+{
+  "week": "2026-W28",
+  "start_date": "2026-07-06",
+  "end_date": "2026-07-12",
+  "label": "Semana 28 · 2026",
+  "date_range": "6 — 12 Jul 2026",
+  "playlist_url": "https://open.spotify.com/playlist/3iHETIGrWBdoY3a8jNrMox",
+  "tracks": [
+    {
+      "rank": 1,
+      "artist": "Nate Sib",
+      "title": "Face Card",
+      "source": "Stereogum",
+      "source_count": 2,
+      "spotify_url": "https://open.spotify.com/track/5zsaIAuOp3SmeNV3ASmJMs"
+    },
+    {
+      "rank": 2,
+      "artist": "Houndmouth",
+      "title": "Lordy",
+      "source": "NPR",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/13yDKinf6kzMPy65oiZTCO"
+    },
+    {
+      "rank": 3,
+      "artist": "Suki Waterhouse",
+      "title": "Loveland",
+      "source": "NPR",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/0i0QWEnQAhJDSUP4p8CWHR"
+    },
+    {
+      "rank": 4,
+      "artist": "Cécile McLorin Salvant",
+      "title": "With Every Breath I Take",
+      "source": "NPR",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/6nnZz5PHA285oBv8Cdy2TW"
+    },
+    {
+      "rank": 5,
+      "artist": "Los Skeepers",
+      "title": "NADA MÁS+",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/4wghV1vcoQ7t25iH3JD06t"
+    },
+    {
+      "rank": 6,
+      "artist": "Starcleaner Reunion",
+      "title": "Never Odd Or Even",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/7foQVhKpHjuzZhT3CW42xw"
+    },
+    {
+      "rank": 7,
+      "artist": "Getdown Services",
+      "title": "Cha Cha Slide",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/2oOD1Ad2TZocSGeySYrXgn"
+    }
+  ],
+  "albums": [
+    {
+      "rank": 1,
+      "artist": "Sudan Archives",
+      "title": "THE BPM",
+      "source": "Stones Throw (Bandcamp)",
+      "source_count": 1,
+      "link": "https://sudanarchives.bandcamp.com/album/the-bpm?label=1441992835&tab=music",
+      "spotify_url": "https://open.spotify.com/album/6xuXmpSyh7WqIct3bvsSfg",
+      "spotify_match": "resolved"
+    },
+    {
+      "rank": 2,
+      "artist": "SPRINTS",
+      "title": "Trickle Down",
+      "source": "Sub Pop (Bandcamp)",
+      "source_count": 1,
+      "link": "https://sprintsmusic.bandcamp.com/album/trickle-down?label=200780738&tab=music",
+      "spotify_url": "https://open.spotify.com/album/2dQKcjHdSTqW7lN9oM45yr",
+      "spotify_match": "resolved"
+    },
+    {
+      "rank": 3,
+      "artist": "Masayoshi Takanaka",
+      "title": "All of Me",
+      "source": "Aquarium Drunkard",
+      "source_count": 1,
+      "link": "https://aquariumdrunkard.com/2026/05/13/masayoshi-takanaka-all-of-me/",
+      "spotify_url": "https://open.spotify.com/album/3sjIDWWnYzzS7PF3vjZmcB",
+      "spotify_match": "direct"
+    },
+    {
+      "rank": 4,
+      "artist": "2K88, Lauren Duffus, Rainy Miller & Bianca Scout",
+      "title": "Everything Always Changes, for We’re Truly Here",
+      "source": "The Guardian",
+      "source_count": 1,
+      "link": "https://www.theguardian.com/music/2026/jul/03/2k88-lauren-duffus-rainy-miller-bianca-scout-everything-always-changes-for-were-truly-here-review-uk-poland-clan-create-murky-beauty",
+      "spotify_url": "https://open.spotify.com/album/4r6fyflHmA1FEaRDsRvcDQ",
+      "spotify_match": "resolved"
+    },
+    {
+      "rank": 5,
+      "artist": "Madonna",
+      "title": "Confessions II",
+      "source": "The Guardian",
+      "source_count": 1,
+      "link": "https://www.theguardian.com/music/2026/jul/02/madonna-confessions-ii-album-review",
+      "spotify_url": "https://open.spotify.com/album/1CWY6mfnuLlF4BKRLFcUDQ",
+      "spotify_match": "resolved"
+    },
+    {
+      "rank": 6,
+      "artist": "The Rolling Stones",
+      "title": "Foreign Tongues",
+      "source": "The Guardian",
+      "source_count": 1,
+      "link": "https://www.theguardian.com/music/2026/jul/04/the-rolling-stones-foreign-tongues-review",
+      "spotify_url": "https://open.spotify.com/album/650o7IPvNOzSSn9qOyJhxw",
+      "spotify_match": "resolved"
+    },
+    {
+      "rank": 7,
+      "artist": "Truck Violence",
+      "title": "The Weathervane Is My Body",
+      "source": "The Quietus",
+      "source_count": 1,
+      "link": "https://thequietus.com/quietus-reviews/truck-violence-the-weathervane-is-my-body-review/?utm_source=rss&utm_medium=rss&utm_campaign=truck-violence-the-weathervane-is-my-body-review",
+      "spotify_url": "https://open.spotify.com/album/2fVzzo8IRKjQOVpkcUnRQD",
+      "spotify_match": "resolved"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Stereogum",
+      "url": "https://www.stereogum.com"
+    },
+    {
+      "name": "NPR",
+      "url": "https://www.npr.org/music"
+    },
+    {
+      "name": "Stones Throw (Bandcamp)",
+      "url": "https://stonesthrow.bandcamp.com"
+    },
+    {
+      "name": "Sub Pop (Bandcamp)",
+      "url": "https://subpop.bandcamp.com"
+    },
+    {
+      "name": "Aquarium Drunkard",
+      "url": "https://aquariumdrunkard.com"
+    },
+    {
+      "name": "The Guardian",
+      "url": "https://www.theguardian.com/music"
+    },
+    {
+      "name": "The Quietus",
+      "url": "https://thequietus.com"
+    }
+  ]
+}
