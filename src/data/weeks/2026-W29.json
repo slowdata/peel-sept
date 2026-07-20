@@ -1,0 +1,172 @@
+{
+  "week": "2026-W29",
+  "start_date": "2026-07-13",
+  "end_date": "2026-07-19",
+  "label": "Semana 29 · 2026",
+  "date_range": "13 — 19 Jul 2026",
+  "playlist_url": "https://open.spotify.com/playlist/3iHETIGrWBdoY3a8jNrMox",
+  "tracks": [
+    {
+      "rank": 1,
+      "artist": "Swapmeet",
+      "title": "Mount Zero",
+      "source": "NPR",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/2TvMDOgXSMEiOtB5U2YCHT"
+    },
+    {
+      "rank": 2,
+      "artist": "Steve Lacy",
+      "title": "Oh yeah?",
+      "source": "NPR",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/22NHkFYbgxB2Zirj29Gbp8"
+    },
+    {
+      "rank": 3,
+      "artist": "Gracie Abrams",
+      "title": "Daughter From Hell",
+      "source": "NPR",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/7yogqG9VriSe2gE9RKZKwG"
+    },
+    {
+      "rank": 4,
+      "artist": "The Buoys",
+      "title": "Welcome To My Brain",
+      "source": "The Line of Best Fit",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/3ED4oFhoGJunbyTkUaFQhc"
+    },
+    {
+      "rank": 5,
+      "artist": "Fletchr Fletchr",
+      "title": "Streetlights",
+      "source": "The Line of Best Fit",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/1METhzPqwfclxfkZysyVps"
+    },
+    {
+      "rank": 6,
+      "artist": "Ceremony",
+      "title": "Dark Summer",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/2IBMljVB5JsAE4jd6mIVZ7"
+    },
+    {
+      "rank": 7,
+      "artist": "silt.",
+      "title": "trauma porn",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/37ncKphF3K78C49uxatyq6"
+    }
+  ],
+  "albums": [
+    {
+      "rank": 1,
+      "artist": "SML",
+      "title": "Spontaneous Music Live",
+      "source": "Aquarium Drunkard, Pitchfork",
+      "source_count": 2,
+      "link": "https://aquariumdrunkard.com/2026/06/01/sml-the-aquarium-drunkard-interview/",
+      "spotify_url": "https://open.spotify.com/album/6gzpfdTXwjYjsp9VTvTyNu",
+      "spotify_match": "direct"
+    },
+    {
+      "rank": 2,
+      "artist": "Madonna",
+      "title": "Confessions II",
+      "source": "The Guardian, The Quietus",
+      "source_count": 2,
+      "link": "https://www.theguardian.com/music/2026/jul/02/madonna-confessions-ii-album-review",
+      "spotify_url": "https://open.spotify.com/album/1CWY6mfnuLlF4BKRLFcUDQ",
+      "spotify_match": "resolved"
+    },
+    {
+      "rank": 3,
+      "artist": "Goya Gumbani",
+      "title": "Warlord of the Weejuns",
+      "source": "Ghostly International (Bandcamp)",
+      "source_count": 1,
+      "link": "https://goyagumbani.bandcamp.com/album/warlord-of-the-weejuns?label=1560012315&tab=music",
+      "spotify_url": "https://open.spotify.com/album/0z9rMVfqz2MY5DLLyB7tSP",
+      "spotify_match": "resolved"
+    },
+    {
+      "rank": 4,
+      "artist": "HTRK",
+      "title": "Swimming Pool / Puddles on My Pillow",
+      "source": "Ghostly International (Bandcamp)",
+      "source_count": 1,
+      "link": "https://htrk.bandcamp.com/album/swimming-pool-puddles-on-my-pillow?label=1560012315&tab=music",
+      "spotify_url": "https://open.spotify.com/album/5Fz76M7GkaDO8pObe6MRFs",
+      "spotify_match": "resolved"
+    },
+    {
+      "rank": 5,
+      "artist": "quickly, quickly",
+      "title": "I Heard That Noise",
+      "source": "Ghostly International (Bandcamp)",
+      "source_count": 1,
+      "link": "https://quicklyquickly.bandcamp.com/album/i-heard-that-noise?label=1560012315&tab=music",
+      "spotify_url": "https://open.spotify.com/album/3hXswlXaEoYMiBQ9TZN2wR",
+      "spotify_match": "resolved"
+    },
+    {
+      "rank": 6,
+      "artist": "Joviale",
+      "title": "Moonshine",
+      "source": "Ghostly International (Bandcamp)",
+      "source_count": 1,
+      "link": "https://joviale.bandcamp.com/track/moonshine?label=1560012315&tab=music",
+      "spotify_url": "https://open.spotify.com/album/06goNRgHCyVpJJl9axXb5L",
+      "spotify_match": "resolved"
+    },
+    {
+      "rank": 7,
+      "artist": "TOPS",
+      "title": "ICU2",
+      "source": "Ghostly International (Bandcamp)",
+      "source_count": 1,
+      "link": "https://tops.bandcamp.com/track/icu2?label=1560012315&tab=music",
+      "spotify_url": "https://open.spotify.com/search/TOPS%20ICU2",
+      "spotify_match": "search"
+    }
+  ],
+  "sources": [
+    {
+      "name": "NPR",
+      "url": "https://www.npr.org/music"
+    },
+    {
+      "name": "The Line of Best Fit",
+      "url": "https://www.thelineofbestfit.com/news"
+    },
+    {
+      "name": "Stereogum",
+      "url": "https://www.stereogum.com"
+    },
+    {
+      "name": "Aquarium Drunkard",
+      "url": "https://aquariumdrunkard.com"
+    },
+    {
+      "name": "Pitchfork",
+      "url": "https://pitchfork.com"
+    },
+    {
+      "name": "The Guardian",
+      "url": "https://www.theguardian.com/music"
+    },
+    {
+      "name": "The Quietus",
+      "url": "https://thequietus.com"
+    },
+    {
+      "name": "Ghostly International (Bandcamp)",
+      "url": "https://ghostly.bandcamp.com"
+    }
+  ]
+}
