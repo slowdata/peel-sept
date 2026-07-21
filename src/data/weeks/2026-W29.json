@@ -66,73 +66,87 @@
   "albums": [
     {
       "rank": 1,
-      "artist": "SML",
-      "title": "Spontaneous Music Live",
-      "source": "Aquarium Drunkard, Pitchfork",
-      "source_count": 2,
-      "link": "https://aquariumdrunkard.com/2026/06/01/sml-the-aquarium-drunkard-interview/",
-      "spotify_url": "https://open.spotify.com/album/6gzpfdTXwjYjsp9VTvTyNu",
+      "artist": "Joe Gibbs & The Professionals",
+      "title": "African Dub All-Mighty: Chapter 3",
+      "source": "Aquarium Drunkard",
+      "source_count": 1,
+      "link": "https://aquariumdrunkard.com/2026/07/09/joe-gibbs-the-professionals-african-dub-all-mighty-chapter-3/",
+      "listen_url": "https://open.spotify.com/album/2Ev6LKlEV7T5xKmftk3ggk",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/2Ev6LKlEV7T5xKmftk3ggk",
       "spotify_match": "direct"
     },
     {
       "rank": 2,
-      "artist": "Madonna",
-      "title": "Confessions II",
-      "source": "The Guardian, The Quietus",
-      "source_count": 2,
-      "link": "https://www.theguardian.com/music/2026/jul/02/madonna-confessions-ii-album-review",
-      "spotify_url": "https://open.spotify.com/album/1CWY6mfnuLlF4BKRLFcUDQ",
-      "spotify_match": "resolved"
+      "artist": "Baby Rose",
+      "title": "Yearnalism",
+      "source": "The Guardian",
+      "source_count": 1,
+      "link": "https://www.theguardian.com/music/2026/jul/10/baby-rose-yearnalism-review-gloriously-cinematic-soul-from-the-edge-of-emotional-collapse",
+      "listen_url": "https://open.spotify.com/album/3WaxSapHGFrhvipg1wuLta",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/3WaxSapHGFrhvipg1wuLta",
+      "spotify_match": "direct"
     },
     {
       "rank": 3,
-      "artist": "Goya Gumbani",
-      "title": "Warlord of the Weejuns",
-      "source": "Ghostly International (Bandcamp)",
+      "artist": "Xiu Xiu",
+      "title": "Eraserhead Xiu Xiu",
+      "source": "The Quietus",
       "source_count": 1,
-      "link": "https://goyagumbani.bandcamp.com/album/warlord-of-the-weejuns?label=1560012315&tab=music",
-      "spotify_url": "https://open.spotify.com/album/0z9rMVfqz2MY5DLLyB7tSP",
-      "spotify_match": "resolved"
+      "link": "https://thequietus.com/quietus-reviews/xiu-xiu-eraserhead-xiu-xiu-review/?utm_source=rss&utm_medium=rss&utm_campaign=xiu-xiu-eraserhead-xiu-xiu-review",
+      "listen_url": "https://open.spotify.com/search/Xiu%20Xiu%20Eraserhead%20Xiu%20Xiu",
+      "listen_kind": "search",
+      "spotify_url": "https://open.spotify.com/search/Xiu%20Xiu%20Eraserhead%20Xiu%20Xiu",
+      "spotify_match": "search"
     },
     {
       "rank": 4,
-      "artist": "HTRK",
-      "title": "Swimming Pool / Puddles on My Pillow",
-      "source": "Ghostly International (Bandcamp)",
+      "artist": "Los Retros",
+      "title": "Early Days (2016-2019)",
+      "source": "Stones Throw (Bandcamp)",
       "source_count": 1,
-      "link": "https://htrk.bandcamp.com/album/swimming-pool-puddles-on-my-pillow?label=1560012315&tab=music",
-      "spotify_url": "https://open.spotify.com/album/5Fz76M7GkaDO8pObe6MRFs",
-      "spotify_match": "resolved"
+      "link": "https://losretros.bandcamp.com/album/early-days-2016-2019?label=1441992835&tab=music",
+      "listen_url": "https://open.spotify.com/album/6ys0P0rjNZSWgsREro1Qpp",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/6ys0P0rjNZSWgsREro1Qpp",
+      "spotify_match": "direct"
     },
     {
       "rank": 5,
-      "artist": "quickly, quickly",
-      "title": "I Heard That Noise",
-      "source": "Ghostly International (Bandcamp)",
+      "artist": "Man Man and Fingers & The Outlaws",
+      "title": "So It Goes",
+      "source": "Sub Pop (Bandcamp)",
       "source_count": 1,
-      "link": "https://quicklyquickly.bandcamp.com/album/i-heard-that-noise?label=1560012315&tab=music",
-      "spotify_url": "https://open.spotify.com/album/3hXswlXaEoYMiBQ9TZN2wR",
-      "spotify_match": "resolved"
+      "link": "https://manmanbandband.bandcamp.com/album/so-it-goes?label=200780738&tab=music",
+      "listen_url": "https://open.spotify.com/album/6SXu0WRmbForOCm1khM37t",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/6SXu0WRmbForOCm1khM37t",
+      "spotify_match": "direct"
     },
     {
       "rank": 6,
-      "artist": "Joviale",
-      "title": "Moonshine",
-      "source": "Ghostly International (Bandcamp)",
+      "artist": "Horse Lords",
+      "title": "Demand to Be Taken to Heaven Alive!",
+      "source": "Aquarium Drunkard",
       "source_count": 1,
-      "link": "https://joviale.bandcamp.com/track/moonshine?label=1560012315&tab=music",
-      "spotify_url": "https://open.spotify.com/album/06goNRgHCyVpJJl9axXb5L",
-      "spotify_match": "resolved"
+      "link": "https://aquariumdrunkard.com/2026/07/16/horse-lords-demand-to-be-taken-to-heaven-alive/",
+      "listen_url": "https://open.spotify.com/album/3q8CQdpq57Xi0zXn5qlauk",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/3q8CQdpq57Xi0zXn5qlauk",
+      "spotify_match": "direct"
     },
     {
       "rank": 7,
-      "artist": "TOPS",
-      "title": "ICU2",
-      "source": "Ghostly International (Bandcamp)",
+      "artist": "Gracie Abrams",
+      "title": "Daughter from Hell",
+      "source": "The Guardian",
       "source_count": 1,
-      "link": "https://tops.bandcamp.com/track/icu2?label=1560012315&tab=music",
-      "spotify_url": "https://open.spotify.com/search/TOPS%20ICU2",
-      "spotify_match": "search"
+      "link": "https://www.theguardian.com/music/2026/jul/13/gracie-abrams-daughter-from-hell-review",
+      "listen_url": "https://open.spotify.com/album/4BZydSQMfJNphTFZzyIxh5",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/4BZydSQMfJNphTFZzyIxh5",
+      "spotify_match": "direct"
     }
   ],
   "sources": [
@@ -153,10 +167,6 @@
       "url": "https://aquariumdrunkard.com"
     },
     {
-      "name": "Pitchfork",
-      "url": "https://pitchfork.com"
-    },
-    {
       "name": "The Guardian",
       "url": "https://www.theguardian.com/music"
     },
@@ -165,8 +175,12 @@
       "url": "https://thequietus.com"
     },
     {
-      "name": "Ghostly International (Bandcamp)",
-      "url": "https://ghostly.bandcamp.com"
+      "name": "Stones Throw (Bandcamp)",
+      "url": "https://stonesthrow.bandcamp.com"
+    },
+    {
+      "name": "Sub Pop (Bandcamp)",
+      "url": "https://subpop.bandcamp.com"
     }
   ]
 }
