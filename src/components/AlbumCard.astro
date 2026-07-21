@@ -2,74 +2,40 @@
 import type { Album } from '../data/issues';
 import { t, type Locale } from '../i18n';
 
-interface Props {
-  album: Album;
-  locale: Locale;
-}
-
+interface Props { album: Album; locale: Locale; }
 const { album, locale } = Astro.props;
 const rank = String(album.rank).padStart(2, '0');
 const title = `${album.artist} — ${album.title}`;
-const href = album.spotify_url || album.link;
+const listenHref = album.listen_url || album.spotify_url || album.link;
 const consensus = album.source_count > 1;
-const spotifyMatch = album.spotify_match ?? inferSpotifyMatch(album.spotify_url);
-const listenLabel = spotifyMatch === 'search' ? t(locale, 'album.searchSpotify') : t(locale, 'album.listenSpotify');
-const sourceHref = album.link && album.link !== href ? album.link : null;
+const kind = album.listen_kind || inferKind(album.spotify_url);
+const listenLabel = kind === 'bandcamp'
+  ? t(locale, 'album.openBandcamp')
+  : kind === 'search' ? t(locale, 'album.searchSpotify') : t(locale, 'album.listenSpotify');
+const sourceHref = album.link && album.link !== listenHref ? album.link : null;
 const sourceLabel = sourceHref ? labelForSourceUrl(sourceHref, locale) : '';
-
-function inferSpotifyMatch(url: string | null): Album['spotify_match'] {
+function inferKind(url: string | null): Album['listen_kind'] {
   if (!url) return null;
-  if (url.includes('/search/')) return 'search';
-  return 'direct';
+  return url.includes('/search/') ? 'search' : 'spotify';
 }
-
 function labelForSourceUrl(url: string, currentLocale: Locale): string {
   try {
-    const hostname = new URL(url).hostname.replace(/^www\./, '').toLowerCase();
-    if (hostname.endsWith('bandcamp.com')) return t(currentLocale, 'album.openBandcamp');
-    if (hostname.endsWith('open.spotify.com')) return t(currentLocale, 'album.listenSpotify');
+    const host = new URL(url).hostname.replace(/^www\./, '').toLowerCase();
+    if (host.endsWith('bandcamp.com')) return t(currentLocale, 'album.openBandcamp');
     return t(currentLocale, 'album.readReview');
-  } catch {
-    return t(currentLocale, 'album.openSource');
-  }
+  } catch { return t(currentLocale, 'album.openSource'); }
 }
 ---
 
-<div class="alb-wrap">
-  {
-    href ? (
-      <a
-        class:list={['alb', { consensus }]}
-        href={href}
-        aria-label={`${listenLabel}: ${title}`}
-        title={`${listenLabel}: ${title}`}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span class="tip">{title}</span>
-        <span class="n">{rank}</span>
-      </a>
-    ) : (
-      <div class:list={['alb', { consensus }]} aria-label={title}>
-        <span class="tip">{title}</span>
-        <span class="n">{rank}</span>
-      </div>
-    )
-  }
-  {
-    sourceHref ? (
-      <a
-        class="alb-source"
-        href={sourceHref}
-        aria-label={`${sourceLabel}: ${title}`}
-        title={`${sourceLabel}: ${title}`}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {sourceLabel}
-      </a>
-    ) : (
-      <span class="alb-source alb-source-empty" aria-hidden="true">&nbsp;</span>
-    )
-  }
-</div>
+<article class:list={['alb', { consensus }]}>
+  <span class="n" aria-hidden="true">{rank}</span>
+  <div class="alb-copy">
+    <p class="alb-artist">{album.artist}</p>
+    <h3>{album.title}</h3>
+    <p class="alb-meta">{album.source}{consensus ? ` · ${album.source_count}` : ''}</p>
+  </div>
+  <div class="alb-actions">
+    {listenHref && <a class="alb-listen" href={listenHref} target="_blank" rel="noopener noreferrer" aria-label={`${listenLabel}: ${title}`}>{listenLabel}</a>}
+    {sourceHref && <a class="alb-source" href={sourceHref} target="_blank" rel="noopener noreferrer" aria-label={`${sourceLabel}: ${title}`}>{sourceLabel}</a>}
+  </div>
+</article>

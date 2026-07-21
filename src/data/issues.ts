@@ -8,6 +8,7 @@ export type Track = {
 };
 
 export type AlbumSpotifyMatch = 'direct' | 'resolved' | 'search';
+export type AlbumListenKind = 'spotify' | 'bandcamp' | 'search';
 
 export type Album = {
   rank: number;
@@ -16,6 +17,8 @@ export type Album = {
   source: string;
   source_count: number;
   link: string | null;
+  listen_url?: string | null;
+  listen_kind?: AlbumListenKind | null;
   spotify_url: string | null;
   spotify_match?: AlbumSpotifyMatch | null;
 };

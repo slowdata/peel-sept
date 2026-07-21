@@ -385,108 +385,41 @@ const otherLocale: Locale = locale === 'en' ? 'pt' : 'en';
 
   .albgrid {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
     margin-top: 26px;
   }
 
-  .alb-wrap {
-    display: grid;
-    gap: 7px;
-    min-width: 0;
-  }
-
   .alb {
-    position: relative;
     display: grid;
-    aspect-ratio: 1;
-    width: 100%;
-    place-items: center;
+    grid-template-columns: 28px minmax(0, 1fr);
+    gap: 10px;
+    padding: 15px;
     border: 1px dashed var(--line);
     border-radius: 10px;
-    text-decoration: none;
-    transition:
-      border-color 0.18s ease,
-      background 0.18s ease;
   }
 
-  .alb:hover,
-  .alb:focus-visible {
-    border-color: var(--faint);
-    background: var(--hover);
-    outline: none;
-  }
-
+  .alb.consensus { border-color: color-mix(in srgb, var(--accent), var(--line) 45%); }
   .alb .n {
-    font-family: 'Geist Mono', monospace;
     color: var(--faint);
+    font-family: 'Geist Mono', monospace;
     font-size: 11px;
+    padding-top: 3px;
   }
-
-  .alb .tip {
-    position: absolute;
-    bottom: calc(100% + 8px);
-    left: 50%;
-    max-width: 240px;
-    padding: 5px 9px;
-    transform: translateX(-50%);
-    border-radius: 6px;
-    opacity: 0;
-    background: var(--fg);
-    color: var(--bg);
-    font-size: 11px;
-    font-weight: 500;
-    pointer-events: none;
-    text-align: center;
-    transition: opacity 0.15s ease;
-    white-space: nowrap;
-    z-index: 2;
-  }
-
-  .alb:hover .tip,
-  .alb:focus-visible .tip {
-    opacity: 1;
-  }
-
-  .alb.consensus {
-    border-color: color-mix(in srgb, var(--accent), var(--line) 45%);
-  }
-
-  /* Slot vazio: mantém a grelha sempre com 7 quadrados, em estado desativado. */
-  .alb-empty {
-    opacity: 0.4;
-    pointer-events: none;
-  }
-
-  .alb-empty .n {
-    color: var(--line);
-  }
-
-  .alb-source {
-    justify-self: center;
-    max-width: 100%;
-    overflow: hidden;
+  .alb-copy { min-width: 0; }
+  .alb-artist, .alb-meta { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.35; }
+  .alb h3 { margin: 2px 0 7px; font-family: 'Fraunces', serif; font-size: 18px; font-weight: 500; line-height: 1.15; }
+  .alb-actions { grid-column: 2; display: flex; flex-wrap: wrap; gap: 10px; margin-top: 2px; }
+  .alb-listen, .alb-source {
     color: var(--faint);
     font-family: 'Geist Mono', monospace;
     font-size: 10px;
-    letter-spacing: 1px;
-    line-height: 1.2;
+    letter-spacing: .7px;
     text-decoration: none;
-    text-overflow: ellipsis;
     text-transform: uppercase;
-    white-space: nowrap;
-    transition: color 0.16s ease;
   }
-
-  .alb-source:hover,
-  .alb-source:focus-visible {
-    color: var(--accent);
-    outline: none;
-  }
-
-  .alb-source-empty {
-    pointer-events: none;
-  }
+  .alb-listen { color: var(--accent); }
+  .alb-listen:hover, .alb-source:hover, .alb-listen:focus-visible, .alb-source:focus-visible { color: var(--fg); outline: none; }
 
   .alb-cap {
     margin-top: 22px;
@@ -639,12 +572,6 @@ const otherLocale: Locale = locale === 'en' ? 'pt' : 'en';
       text-align: right;
     }
 
-    .albgrid {
-      grid-template-columns: repeat(4, 1fr);
-    }
-
-    .alb .tip {
-      display: none;
-    }
+    .albgrid { grid-template-columns: 1fr; }
   }
 </style>
