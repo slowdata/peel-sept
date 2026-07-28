@@ -1,0 +1,190 @@
+{
+  "week": "2026-W30",
+  "start_date": "2026-07-20",
+  "end_date": "2026-07-26",
+  "label": "Semana 30 · 2026",
+  "date_range": "20 — 26 Jul 2026",
+  "playlist_url": "https://open.spotify.com/playlist/3iHETIGrWBdoY3a8jNrMox",
+  "tracks": [
+    {
+      "rank": 1,
+      "artist": "WILLOW",
+      "title": "The Thread",
+      "source": "NPR",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/2rYdjROMOFc8olkFrg2Cr9"
+    },
+    {
+      "rank": 2,
+      "artist": "Chinese American Bear",
+      "title": "No No Yeah Yeah (不不好啊好啊)",
+      "source": "KEXP",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/5VD8hV4xGESEJmKAfILKir"
+    },
+    {
+      "rank": 3,
+      "artist": "Boyhood",
+      "title": "Loner",
+      "source": "Gorilla vs Bear",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/6TczXYeWvIEoSnWWg8BLZl"
+    },
+    {
+      "rank": 4,
+      "artist": "Trusselina",
+      "title": "Gastro",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/6MoUyMyEsZbAlWPfjPhKy7"
+    },
+    {
+      "rank": 5,
+      "artist": "Chad Hugo",
+      "title": "JUMPUPW!NYA",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/01rBZqTZBqDQle5JGc7r3K"
+    },
+    {
+      "rank": 6,
+      "artist": "Teenage Fanclub",
+      "title": "Day In The Sun",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/00dKwN1r9vHzUTBQbvCtyj"
+    },
+    {
+      "rank": 7,
+      "artist": "Emma Ruth Rundle",
+      "title": "Enough",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/5uJWzxAUwEqfwhQiIWXBZJ"
+    }
+  ],
+  "albums": [
+    {
+      "rank": 1,
+      "artist": "Panda Bear and Sonic Boom",
+      "title": "A ? of WHEN",
+      "source": "Aquarium Drunkard, The Quietus",
+      "source_count": 2,
+      "link": "https://aquariumdrunkard.com/2026/07/09/panda-bear-sonic-boom-a-of-when/",
+      "listen_url": "https://open.spotify.com/search/Panda%20Bear%20and%20Sonic%20Boom%20A%20%3F%20of%20WHEN",
+      "listen_kind": "search",
+      "spotify_url": "https://open.spotify.com/search/Panda%20Bear%20and%20Sonic%20Boom%20A%20%3F%20of%20WHEN",
+      "spotify_match": "search"
+    },
+    {
+      "rank": 2,
+      "artist": "Charli Xcx",
+      "title": "Music, Fashion, Film",
+      "source": "The Guardian, Pitchfork",
+      "source_count": 2,
+      "link": "https://www.theguardian.com/music/2026/jul/24/charli-xcx-music-fashion-film-review",
+      "listen_url": "https://open.spotify.com/album/4bR7pd6TVS53l24qFV4wI8",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/4bR7pd6TVS53l24qFV4wI8",
+      "spotify_match": "direct"
+    },
+    {
+      "rank": 3,
+      "artist": "Speaker Music",
+      "title": "Synoptic Audio",
+      "source": "The Quietus",
+      "source_count": 1,
+      "link": "https://thequietus.com/quietus-reviews/speaker-music-synoptic-audio-review/?utm_source=rss&utm_medium=rss&utm_campaign=speaker-music-synoptic-audio-review",
+      "listen_url": "https://open.spotify.com/album/66yTd9FrhbN4v6GBtSxvWc",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/66yTd9FrhbN4v6GBtSxvWc",
+      "spotify_match": "direct"
+    },
+    {
+      "rank": 4,
+      "artist": "Lathe of Heaven",
+      "title": "Aurora",
+      "source": "Sacred Bones (Bandcamp)",
+      "source_count": 1,
+      "link": "https://latheofheaven.bandcamp.com/album/aurora?label=237579501&tab=music",
+      "listen_url": "https://open.spotify.com/album/7lAalKaFEstpNkdM59yRyT",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/7lAalKaFEstpNkdM59yRyT",
+      "spotify_match": "direct"
+    },
+    {
+      "rank": 5,
+      "artist": "Styrofoam Winos",
+      "title": "Any River",
+      "source": "Aquarium Drunkard",
+      "source_count": 1,
+      "link": "https://aquariumdrunkard.com/2026/07/21/styrofoam-winos-the-aquarium-drunkard-interview/",
+      "listen_url": "https://open.spotify.com/album/5hRdpUVEFTZgSj73G6PqLb",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/5hRdpUVEFTZgSj73G6PqLb",
+      "spotify_match": "direct"
+    },
+    {
+      "rank": 6,
+      "artist": "Nia Archives",
+      "title": "Emotional Junglist",
+      "source": "The Guardian",
+      "source_count": 1,
+      "link": "https://www.theguardian.com/music/2026/jul/16/nia-archives-emotional-junglist-review",
+      "listen_url": "https://open.spotify.com/album/513jv6L44NNDZQGSaPNg7S",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/513jv6L44NNDZQGSaPNg7S",
+      "spotify_match": "direct"
+    },
+    {
+      "rank": 7,
+      "artist": "Kirk Barley",
+      "title": "Arc",
+      "source": "The Quietus",
+      "source_count": 1,
+      "link": "https://thequietus.com/quietus-reviews/kirk-barley-arc-review/?utm_source=rss&utm_medium=rss&utm_campaign=kirk-barley-arc-review",
+      "listen_url": "https://open.spotify.com/album/7Cjh6gIGdNHifHy3XcZjgt",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/7Cjh6gIGdNHifHy3XcZjgt",
+      "spotify_match": "direct"
+    }
+  ],
+  "sources": [
+    {
+      "name": "NPR",
+      "url": "https://www.npr.org/music"
+    },
+    {
+      "name": "KEXP",
+      "url": "https://www.kexp.org/podcasts/in-our-headphones/"
+    },
+    {
+      "name": "Gorilla vs Bear",
+      "url": "https://www.gorillavsbear.net"
+    },
+    {
+      "name": "Stereogum",
+      "url": "https://www.stereogum.com"
+    },
+    {
+      "name": "Aquarium Drunkard",
+      "url": "https://aquariumdrunkard.com"
+    },
+    {
+      "name": "The Quietus",
+      "url": "https://thequietus.com"
+    },
+    {
+      "name": "The Guardian",
+      "url": "https://www.theguardian.com/music"
+    },
+    {
+      "name": "Pitchfork",
+      "url": "https://pitchfork.com"
+    },
+    {
+      "name": "Sacred Bones (Bandcamp)",
+      "url": "https://sacredbonesrecords.bandcamp.com"
+    }
+  ]
+}
