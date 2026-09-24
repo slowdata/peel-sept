@@ -1,0 +1,197 @@
+{
+  "week": "2026-W38",
+  "start_date": "2026-09-14",
+  "end_date": "2026-09-20",
+  "label": "Semana 38 · 2026",
+  "date_range": "14 — 20 Set 2026",
+  "playlist_url": "https://open.spotify.com/playlist/3iHETIGrWBdoY3a8jNrMox",
+  "tracks": [
+    {
+      "rank": 1,
+      "artist": "Meshell Ndegeocello, Bill Callahan, & Chris Thile",
+      "title": "With God On Our Side",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/2myCD20NCsbiVhGs9hyRhb",
+      "discovery_week": "2026-W38"
+    },
+    {
+      "rank": 2,
+      "artist": "Sophia Stel",
+      "title": "I Do",
+      "source": "Gorilla vs Bear",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/4Y5Zx6Dht91ZUpCQ8NPePX",
+      "discovery_week": "2026-W38"
+    },
+    {
+      "rank": 3,
+      "artist": "Lambrini Girls",
+      "title": "Bang Bang Bang",
+      "source": "Consequence",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/6fhNTP2BZzR3wri0qh1iKx",
+      "discovery_week": "2026-W38"
+    },
+    {
+      "rank": 4,
+      "artist": "Kevin Morby",
+      "title": "PBJ",
+      "source": "Consequence",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/5rjtzSA5VBWg7zmuOGg5Dz",
+      "discovery_week": "2026-W38"
+    },
+    {
+      "rank": 5,
+      "artist": "Fine",
+      "title": "Everything in the shade",
+      "source": "Pitchfork",
+      "source_count": 2,
+      "spotify_url": "https://open.spotify.com/track/6wS9y7UwgL1DQnIWrm5GjF",
+      "discovery_week": "2026-W36"
+    },
+    {
+      "rank": 6,
+      "artist": "Dahi",
+      "title": "How To Pray",
+      "source": "Stereogum",
+      "source_count": 2,
+      "spotify_url": "https://open.spotify.com/track/5M8eNQ6wLYPT9D60hbcxVU",
+      "discovery_week": "2026-W35"
+    },
+    {
+      "rank": 7,
+      "artist": "Helado Tropical",
+      "title": "Déjate Caer",
+      "source": "KEXP",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/1w4kDnnX0HXqRTqlZ4Abme",
+      "discovery_week": "2026-W36"
+    }
+  ],
+  "albums": [
+    {
+      "rank": 1,
+      "artist": "Beabadoobee",
+      "title": "Pylon",
+      "source": "The Guardian, Pitchfork, DIY",
+      "source_count": 3,
+      "link": "https://www.theguardian.com/music/2026/sep/17/beabadoobee-pylon-review",
+      "listen_url": "https://open.spotify.com/album/310lmJwtNvQv6SERdmD34Z",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/310lmJwtNvQv6SERdmD34Z",
+      "spotify_match": "direct"
+    },
+    {
+      "rank": 2,
+      "artist": "Beck",
+      "title": "Ride Lonesome",
+      "source": "The Guardian, Clash, DIY",
+      "source_count": 3,
+      "link": "https://www.theguardian.com/music/2026/sep/14/beck-ride-lonesome-review-stunning-end-to-the-heartache-trilogy-of-sea-change-and-morning-phase",
+      "listen_url": "https://open.spotify.com/album/6gP36h0Cv8vTiBmdbHO3qI",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/6gP36h0Cv8vTiBmdbHO3qI",
+      "spotify_match": "direct"
+    },
+    {
+      "rank": 3,
+      "artist": "Bloc Party",
+      "title": "Anatomy of a Brief Romance",
+      "source": "Pitchfork, Clash",
+      "source_count": 2,
+      "link": "https://pitchfork.com/reviews/albums/bloc-party-anatomy-of-a-brief-romance/",
+      "listen_url": "https://open.spotify.com/album/2ioMSFKX2C9GslsXAabMgP",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/2ioMSFKX2C9GslsXAabMgP",
+      "spotify_match": "direct"
+    },
+    {
+      "rank": 4,
+      "artist": "Actress",
+      "title": "Radical Frame",
+      "source": "The Quietus, Clash",
+      "source_count": 2,
+      "link": "https://thequietus.com/quietus-reviews/actress-radical-frame-review/",
+      "listen_url": "https://open.spotify.com/album/4bvfwACExnuV8cVqmTvneG",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/4bvfwACExnuV8cVqmTvneG",
+      "spotify_match": "direct"
+    },
+    {
+      "rank": 5,
+      "artist": "Ezra Collective",
+      "title": "Here Because Of Hope",
+      "source": "Clash, DIY",
+      "source_count": 2,
+      "link": "https://www.clashmusic.com/reviews/ezra-collective-here-because-of-hope/",
+      "listen_url": "https://open.spotify.com/album/4BKNpqrUgWxpA1d8u5e95j",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/4BKNpqrUgWxpA1d8u5e95j",
+      "spotify_match": "direct"
+    },
+    {
+      "rank": 6,
+      "artist": "The Tubs",
+      "title": "Hard Life",
+      "source": "The Guardian, Pitchfork",
+      "source_count": 2,
+      "link": "https://www.theguardian.com/music/2026/sep/10/the-tubs-hard-life-review",
+      "listen_url": "https://open.spotify.com/album/4cFFdzzZUjj7pmx8VegJbM",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/4cFFdzzZUjj7pmx8VegJbM",
+      "spotify_match": "direct"
+    },
+    {
+      "rank": 7,
+      "artist": "The Strokes",
+      "title": "Reality Awaits",
+      "source": "The Guardian, The Quietus",
+      "source_count": 2,
+      "link": "https://www.theguardian.com/music/2026/jul/24/the-strokes-reality-awaits-review",
+      "listen_url": "https://open.spotify.com/album/6x0nmCMjHeuN3rYBmI5Bor",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/6x0nmCMjHeuN3rYBmI5Bor",
+      "spotify_match": "direct"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Stereogum",
+      "url": "https://www.stereogum.com"
+    },
+    {
+      "name": "Gorilla vs Bear",
+      "url": "https://www.gorillavsbear.net"
+    },
+    {
+      "name": "Consequence",
+      "url": "https://consequence.net/category/music/"
+    },
+    {
+      "name": "Pitchfork",
+      "url": "https://pitchfork.com"
+    },
+    {
+      "name": "KEXP",
+      "url": "https://www.kexp.org/podcasts/in-our-headphones/"
+    },
+    {
+      "name": "The Guardian",
+      "url": "https://www.theguardian.com/music"
+    },
+    {
+      "name": "DIY",
+      "url": "https://diymag.com/review/album"
+    },
+    {
+      "name": "Clash",
+      "url": "https://www.clashmusic.com/reviews/"
+    },
+    {
+      "name": "The Quietus",
+      "url": "https://thequietus.com"
+    }
+  ]
+}
