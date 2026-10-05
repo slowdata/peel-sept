@@ -94,6 +94,18 @@
       "listen_kind": "spotify",
       "spotify_url": "https://open.spotify.com/album/6axHKsr3XutYidaQ8GtHM6",
       "spotify_match": "direct"
+    },
+    {
+      "rank": 3,
+      "artist": "Bullion",
+      "title": "Nearly",
+      "source": "Pitchfork",
+      "source_count": 1,
+      "link": "https://pitchfork.com/reviews/albums/bullion-nearly/",
+      "listen_url": "https://open.spotify.com/album/0XpKZlGWTpea5gidjWsuuN",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/0XpKZlGWTpea5gidjWsuuN",
+      "spotify_match": "direct"
     }
   ],
   "sources": [
