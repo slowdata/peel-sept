@@ -1,0 +1,137 @@
+{
+  "week": "2026-W40",
+  "start_date": "2026-09-28",
+  "end_date": "2026-10-04",
+  "label": "Semana 40 · 2026",
+  "date_range": "28 Set — 4 Out 2026",
+  "playlist_url": "https://open.spotify.com/playlist/3iHETIGrWBdoY3a8jNrMox",
+  "tracks": [
+    {
+      "rank": 1,
+      "artist": "Fontaines D.C.",
+      "title": "Tongue",
+      "source": "Consequence",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/1XzQ57ONjIpRYB878VuGnF",
+      "discovery_week": "2026-W40"
+    },
+    {
+      "rank": 2,
+      "artist": "Shady Bug",
+      "title": "seed",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/1YWTC6BKCSxwTuFBHZ38Gt",
+      "discovery_week": "2026-W40"
+    },
+    {
+      "rank": 3,
+      "artist": "Radio Free Alice",
+      "title": "Big Ideas",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/0lJ3nlVIpRiLqo3rlS4nw1",
+      "discovery_week": "2026-W40"
+    },
+    {
+      "rank": 4,
+      "artist": "Yesteban",
+      "title": "Grab",
+      "source": "The Line of Best Fit",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/5k4GcGWTjJFR0LSRwg6nB9",
+      "discovery_week": "2026-W40"
+    },
+    {
+      "rank": 5,
+      "artist": "Michelle David and the True-Tones",
+      "title": "Running",
+      "source": "KEXP",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/5TcRaNHFylMQscsgqnDX8r",
+      "discovery_week": "2026-W40"
+    },
+    {
+      "rank": 6,
+      "artist": "Sons Of Sevilla",
+      "title": "It Could Be Today",
+      "source": "NPR",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/61zGnLLCUqpyZNkkqnMAKu",
+      "discovery_week": "2026-W40"
+    },
+    {
+      "rank": 7,
+      "artist": "CHVRCHES",
+      "title": "Roses",
+      "source": "Consequence",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/3cV0ssCRS5OUR6iRUHf56C",
+      "discovery_week": "2026-W39"
+    }
+  ],
+  "albums": [
+    {
+      "rank": 1,
+      "artist": "Gilla Band",
+      "title": "Pugnello",
+      "source": "The Guardian, DIY, Pitchfork, The Quietus",
+      "source_count": 4,
+      "link": "https://www.theguardian.com/music/2026/sep/24/gilla-band-pugnello-review-five-stars",
+      "listen_url": "https://open.spotify.com/album/5pTvVhdMVV24CQep4GA38F",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/5pTvVhdMVV24CQep4GA38F",
+      "spotify_match": "direct"
+    },
+    {
+      "rank": 2,
+      "artist": "Empress Of",
+      "title": "Dream House",
+      "source": "The Guardian, Pitchfork",
+      "source_count": 2,
+      "link": "https://www.theguardian.com/music/2026/sep/18/empress-of-dream-house-review",
+      "listen_url": "https://open.spotify.com/album/6axHKsr3XutYidaQ8GtHM6",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/6axHKsr3XutYidaQ8GtHM6",
+      "spotify_match": "direct"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Consequence",
+      "url": "https://consequence.net/category/music/"
+    },
+    {
+      "name": "Stereogum",
+      "url": "https://www.stereogum.com"
+    },
+    {
+      "name": "The Line of Best Fit",
+      "url": "https://www.thelineofbestfit.com/news"
+    },
+    {
+      "name": "KEXP",
+      "url": "https://www.kexp.org/podcasts/in-our-headphones/"
+    },
+    {
+      "name": "NPR",
+      "url": "https://www.npr.org/music"
+    },
+    {
+      "name": "The Guardian",
+      "url": "https://www.theguardian.com/music"
+    },
+    {
+      "name": "DIY",
+      "url": "https://diymag.com/review/album"
+    },
+    {
+      "name": "Pitchfork",
+      "url": "https://pitchfork.com"
+    },
+    {
+      "name": "The Quietus",
+      "url": "https://thequietus.com"
+    }
+  ]
+}
