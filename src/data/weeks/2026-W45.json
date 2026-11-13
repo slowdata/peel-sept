@@ -1,0 +1,170 @@
+{
+  "week": "2026-W45",
+  "start_date": "2026-11-02",
+  "end_date": "2026-11-08",
+  "label": "Semana 45 · 2026",
+  "date_range": "2 — 8 Nov 2026",
+  "playlist_url": "https://open.spotify.com/playlist/3iHETIGrWBdoY3a8jNrMox",
+  "tracks": [
+    {
+      "rank": 1,
+      "artist": "Becky And The Birds",
+      "title": "Way Back To You",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/5VxGvEGKHDw8AfoRqdfmcR",
+      "discovery_week": "2026-W45"
+    },
+    {
+      "rank": 2,
+      "artist": "Boys Noize",
+      "title": "Nächsteliebe",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/61zdXHYTIPD8WaCs5hQYoj",
+      "discovery_week": "2026-W45"
+    },
+    {
+      "rank": 3,
+      "artist": "Sufjan Stevens",
+      "title": "On This Christmas (It Only Gets Better)",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/6j9T9L1ISbLbkUjEsFHFcd",
+      "discovery_week": "2026-W45"
+    },
+    {
+      "rank": 4,
+      "artist": "smush",
+      "title": "john dearly",
+      "source": "Stereogum",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/3v34PIRb54ovlyHu8y0qhA",
+      "discovery_week": "2026-W45"
+    },
+    {
+      "rank": 5,
+      "artist": "Slayyyter",
+      "title": "I Think He’s Got A Girl",
+      "source": "The Quietus",
+      "source_count": 3,
+      "spotify_url": "https://open.spotify.com/track/5KJwFcJc0m1u4F8mVkwT5Y",
+      "discovery_week": "2026-W41"
+    },
+    {
+      "rank": 6,
+      "artist": "Star Moles",
+      "title": "Born Again",
+      "source": "Stereogum",
+      "source_count": 2,
+      "spotify_url": "https://open.spotify.com/track/4l1qY5SuMnNExzQCVtS6OS",
+      "discovery_week": "2026-W41"
+    },
+    {
+      "rank": 7,
+      "artist": "bloodsports",
+      "title": "Ten Thousand Feet",
+      "source": "The Line of Best Fit",
+      "source_count": 1,
+      "spotify_url": "https://open.spotify.com/track/5pmua8ZOsIMwcMweSWTIT0",
+      "discovery_week": "2026-W44"
+    }
+  ],
+  "albums": [
+    {
+      "rank": 1,
+      "artist": "PISS",
+      "title": "You Made Me / Skin on Linen",
+      "source": "Beats Per Minute",
+      "source_count": 1,
+      "link": "https://beatsperminute.com/album-review-piss-you-made-me-skin-on-linen/",
+      "listen_url": "https://open.spotify.com/album/4L3aQdOW11hKFGRbpkw3wN",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/4L3aQdOW11hKFGRbpkw3wN",
+      "spotify_match": "direct",
+      "selection_origin": "outside_queue"
+    },
+    {
+      "rank": 2,
+      "artist": "Eels",
+      "title": "Cookie Happened",
+      "source": "Personal pick",
+      "source_count": 0,
+      "link": null,
+      "listen_url": "https://open.spotify.com/album/3zLO9SZOSyFdjgBfO7gi2v",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/3zLO9SZOSyFdjgBfO7gi2v",
+      "spotify_match": "direct",
+      "selection_origin": "outside_queue"
+    },
+    {
+      "rank": 3,
+      "artist": "Queens Of The Stone Age",
+      "title": "Perfecth",
+      "source": "Clash",
+      "source_count": 1,
+      "link": "https://www.clashmusic.com/reviews/queens-of-the-stone-age-perfecth/",
+      "listen_url": "https://open.spotify.com/album/4GUyvsWXjynz867s6Lww2p",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/4GUyvsWXjynz867s6Lww2p",
+      "spotify_match": "direct",
+      "selection_origin": "outside_queue"
+    },
+    {
+      "rank": 4,
+      "artist": "Twisted Teens",
+      "title": "The Holy Cross Tigers",
+      "source": "Pitchfork",
+      "source_count": 1,
+      "link": "https://pitchfork.com/reviews/albums/twisted-teens-the-holy-cross-tigers/",
+      "listen_url": "https://open.spotify.com/album/34rN1EeWCYWzPCwIaUXqQr",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/34rN1EeWCYWzPCwIaUXqQr",
+      "spotify_match": "direct",
+      "selection_origin": "outside_queue"
+    },
+    {
+      "rank": 5,
+      "artist": "RIP Magic",
+      "title": "1,2,3",
+      "source": "Clash",
+      "source_count": 1,
+      "link": "https://www.clashmusic.com/reviews/rip-magic-123/",
+      "listen_url": "https://open.spotify.com/album/1tMPaXMpEEWTYeDEiAlcVv",
+      "listen_kind": "spotify",
+      "spotify_url": "https://open.spotify.com/album/1tMPaXMpEEWTYeDEiAlcVv",
+      "spotify_match": "direct",
+      "selection_origin": "outside_queue"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Stereogum",
+      "url": "https://www.stereogum.com"
+    },
+    {
+      "name": "The Quietus",
+      "url": "https://thequietus.com"
+    },
+    {
+      "name": "The Line of Best Fit",
+      "url": "https://www.thelineofbestfit.com/news"
+    },
+    {
+      "name": "Beats Per Minute",
+      "url": "https://beatsperminute.com/category/reviews/album-reviews/"
+    },
+    {
+      "name": "Personal pick",
+      "url": null
+    },
+    {
+      "name": "Clash",
+      "url": "https://www.clashmusic.com/reviews/"
+    },
+    {
+      "name": "Pitchfork",
+      "url": "https://pitchfork.com"
+    }
+  ]
+}
